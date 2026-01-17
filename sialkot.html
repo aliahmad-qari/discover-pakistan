@@ -2,69 +2,202 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sialkot – Discover Pakistan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sialkot - Sports Capital | Discover Pakistan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-pakistan-green fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-mosque me-2"></i>Discover Pakistan
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cities</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cities.html">All Cities</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="lahore.html">Lahore</a></li>
+                            <li><a class="dropdown-item" href="karachi.html">Karachi</a></li>
+                            <li><a class="dropdown-item" href="islamabad.html">Islamabad</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-2" id="darkModeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Discover Pakistan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="cities.html">Cities</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Pakistan</a></li>
-            </ul>
+    <!-- Hero Section -->
+    <section class="city-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imgaes/sialkot.jpg');">
+        <div class="container">
+            <div class="row justify-content-center text-center text-white">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Sialkot</h1>
+                    <p class="lead mb-4">Sports Capital of Pakistan</p>
+                    <div class="hero-badges">
+                        <span class="badge bg-primary me-2">Industrial Hub</span>
+                        <span class="badge bg-success me-2">Sports Goods</span>
+                        <span class="badge bg-warning">Punjab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-3">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="cities.html">Cities</a></li>
+                <li class="breadcrumb-item active">Sialkot</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Article Header -->
+                <div class="article-header mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge bg-primary me-2">Industrial</span>
+                        <span class="badge bg-success me-2">Sports</span>
+                        <small class="text-muted">Published by Discover Pakistan Team</small>
+                    </div>
+                    <h1 class="article-title">Sialkot: The Global Sports Capital</h1>
+                    <div class="article-meta">
+                        <i class="fas fa-calendar me-2"></i>
+                        <small class="text-muted me-3">Updated December 2024</small>
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <small class="text-muted">Punjab Province, Pakistan</small>
+                    </div>
+                </div>
+
+                <!-- Article Content -->
+                <div class="article-content">
+                    <h2>Historical Background</h2>
+                    <p>Sialkot is one of Pakistan's oldest cities with a history spanning over 2,000 years. It was the birthplace of the great philosopher-poet Allama Iqbal and has been a center of trade and commerce since ancient times. The city gained prominence during the Mughal era and later became a major industrial hub.</p>
+                    
+                    <p>Today, Sialkot is globally recognized as the world's largest producer of hand-sewn footballs and sports goods, earning it the title "Sports Capital of Pakistan." The city exports sports equipment to over 100 countries worldwide.</p>
+
+                    <h2>Famous Places & Landmarks</h2>
+                    <ul>
+                        <li><strong>Iqbal Manzil:</strong> Birthplace and childhood home of Allama Iqbal</li>
+                        <li><strong>Sialkot Fort:</strong> Ancient fort with historical significance</li>
+                        <li><strong>Imam Ali-ul-Haq Mosque:</strong> Beautiful historical mosque</li>
+                        <li><strong>Sports Goods Factories:</strong> World-famous manufacturing units</li>
+                        <li><strong>Sialkot International Airport:</strong> First privately-owned airport in Pakistan</li>
+                        <li><strong>Clock Tower:</strong> British-era landmark in city center</li>
+                        <li><strong>Jinnah Stadium:</strong> Major cricket venue</li>
+                    </ul>
+
+                    <h2>Culture & Traditions</h2>
+                    <p>Sialkot has a rich cultural heritage influenced by its diverse history. The city is proud of being the birthplace of Allama Iqbal, whose philosophy and poetry continue to inspire people worldwide. The entrepreneurial spirit of Sialkot's people has made it a global manufacturing hub.</p>
+                    
+                    <p>The city celebrates Iqbal Day with great enthusiasm and hosts various cultural events throughout the year. Traditional crafts include leather goods, surgical instruments, and of course, world-class sports equipment.</p>
+
+                    <h2>Food & Cuisine</h2>
+                    <p>Sialkot offers traditional Punjabi cuisine with local specialties:</p>
+                    <ul>
+                        <li><strong>Sialkoti Karahi:</strong> Local style meat curry</li>
+                        <li><strong>Chapli Kebab:</strong> Spiced meat patties</li>
+                        <li><strong>Kulfi Falooda:</strong> Traditional ice cream dessert</li>
+                        <li><strong>Lassi:</strong> Refreshing yogurt drink</li>
+                        <li><strong>Parathas:</strong> Stuffed flatbreads with various fillings</li>
+                    </ul>
+
+                    <h2>Industrial Excellence</h2>
+                    <p>Sialkot is renowned for three major industries:</p>
+                    <ul>
+                        <li><strong>Sports Goods:</strong> Footballs, cricket equipment, hockey sticks</li>
+                        <li><strong>Surgical Instruments:</strong> High-quality medical equipment</li>
+                        <li><strong>Leather Products:</strong> Gloves, garments, and accessories</li>
+                    </ul>
+
+                    <h2>Best Time to Visit</h2>
+                    <p>The best time to visit Sialkot is from October to March when the weather is pleasant for exploring the city and its industrial areas. Winter months are ideal for visiting Iqbal Manzil and other historical sites. The city's factories can be visited year-round to witness the world-famous craftsmanship.</p>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <!-- Quick Facts -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-pakistan-green text-white">
+                            <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Quick Facts</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><strong>Province:</strong> Punjab</li>
+                                <li><strong>Population:</strong> ~700,000</li>
+                                <li><strong>Founded:</strong> Ancient times</li>
+                                <li><strong>Language:</strong> Punjabi, Urdu</li>
+                                <li><strong>Famous For:</strong> Sports Goods</li>
+                                <li><strong>Notable:</strong> Allama Iqbal's birthplace</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Related Cities -->
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0">Related Cities</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                <a href="lahore.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Lahore
+                                </a>
+                                <a href="faisalabad.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Faisalabad
+                                </a>
+                                <a href="islamabad.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Islamabad
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
 
-<div class="container my-5 city-detail">
-    <div class="text-center mb-5">
-        <h1 class="display-4 text-success">Sialkot</h1>
-        <p class="lead">Sports Capital of Pakistan</p>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Discover Pakistan</h5>
+                    <p class="mb-0">Exploring the rich heritage and culture of Pakistan's historic cities.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2024 Discover Pakistan. Educational Project.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <h2 class="text-success">City Introduction</h2>
-    <p>Sialkot is famous for sports goods manufacturing and is the birthplace of Allama Iqbal, Pakistan's national poet. It's known for its entrepreneurial spirit and export industry.</p>
-
-    <h2 class="text-success mt-4">Historical Background</h2>
-    <p>Ancient city with trade history dating back thousands of years. It has been an important commercial center and is famous for being the birthplace of Allama Iqbal, the philosopher-poet of the East.</p>
-
-    <h2 class="text-success mt-4">Culture & Society</h2>
-    <p>Business-oriented society with strong work ethics. People are known for their entrepreneurial skills, innovation, and dedication to quality craftsmanship in manufacturing.</p>
-
-    <h2 class="text-success mt-4">Lifestyle & Traditions</h2>
-    <p>Hardworking culture focused on business and manufacturing. People value education, hard work, and maintain traditional Punjabi customs while embracing modern business practices.</p>
-
-    <h2 class="text-success mt-4">Famous Places</h2>
-    <ul>
-        <li>Iqbal Manzil - Birthplace of Allama Iqbal</li>
-        <li>Sialkot Fort - Historic fortress</li>
-        <li>Sports goods factories - World-famous manufacturing units</li>
-    </ul>
-
-    <h2 class="text-success mt-4">Language & Local Food</h2>
-    <p>Punjabi and Urdu are spoken. Popular local street food includes traditional Punjabi dishes, samosas, and local sweets. The city offers simple but delicious local cuisine.</p>
-
-    <h2 class="text-success mt-4">Special Cultural Highlight</h2>
-    <p>Birthplace of Allama Iqbal and world center for sports goods manufacturing. The city produces footballs for FIFA World Cup and other international sports equipment, making it globally recognized.</p>
-
-    <div class="text-center mt-5">
-        <a href="cities.html" class="btn btn-success">Back to Cities</a>
-    </div>
-</div>
-
-<footer class="bg-dark text-white text-center p-3">
-    Educational Project – BSCS | Discover Pakistan
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

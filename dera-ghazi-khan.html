@@ -2,119 +2,202 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dera Ghazi Khan – Discover Pakistan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dera Ghazi Khan - Heart of Siraiki Culture | Discover Pakistan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Discover Pakistan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="cities.html">Cities</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Pakistan</a></li>
-                <li class="nav-item"><button class="btn btn-outline-light btn-sm ms-2" id="themeToggle">🌙</button></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-pakistan-green fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-mosque me-2"></i>Discover Pakistan
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cities</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cities.html">All Cities</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="lahore.html">Lahore</a></li>
+                            <li><a class="dropdown-item" href="karachi.html">Karachi</a></li>
+                            <li><a class="dropdown-item" href="islamabad.html">Islamabad</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-2" id="darkModeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Hero Section with Image -->
-<section class="hero-section text-white text-center py-5" style="background: linear-gradient(rgba(0,100,0,0.7), rgba(40,167,69,0.7)), url('imgaes/WhatsApp Image 2026-01-17 at 15.55.36.jpeg') center/cover;">
-    <div class="container">
-        <h1 class="display-4 text-white fw-bold">Dera Ghazi Khan</h1>
-        <p class="lead">Heart of Siraiki Culture</p>
-    </div>
-</section>
-
-<div class="container my-5 city-detail">
-    <!-- City Introduction -->
-    <div class="row mb-5">
-        <div class="col-lg-8">
-            <h2 class="text-success">City Introduction</h2>
-            <p>Dera Ghazi Khan is a pure Siraiki city that represents the authentic Siraiki culture, language, and traditions. It is the cultural heart of the Siraiki-speaking region.</p>
-        </div>
-        <div class="col-lg-4">
-            <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.37.jpeg" class="img-fluid rounded shadow-sm city-image" alt="Dera Ghazi Khan cityscape">
-        </div>
-    </div>
-
-    <h2 class="text-success mt-4">Historical Background</h2>
-    <p>Founded by Ghazi Khan Mirrani in the 15th century. The city has been the center of Siraiki culture for centuries and has maintained its unique identity and traditions throughout history.</p>
-
-    <!-- Culture -->
-    <div class="row mb-4">
-        <div class="col-lg-8">
-            <h2 class="text-success mt-4">Culture & Society</h2>
-            <p>Strong Siraiki culture with emphasis on poetry, music, and hospitality. People are known for their warmth, simplicity, and deep connection to their Siraiki heritage and language.</p>
-        </div>
-        <div class="col-lg-4">
-            <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.38.jpeg" class="img-fluid rounded shadow-sm city-image" alt="Siraiki cultural traditions">
-        </div>
-    </div>
-
-    <h2 class="text-success mt-4">Lifestyle & Traditions</h2>
-    <p>Simple and tribal lifestyle with strong community bonds. People follow traditional Siraiki customs, enjoy folk music and poetry, and maintain their ancestral way of life.</p>
-
-    <h2 class="text-success mt-4">Famous Places</h2>
-    <div class="row g-3 mb-4">
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.36 (1).jpeg" class="card-img-top city-image" alt="Fort Munro" style="height: 200px; object-fit: cover;">
-                <div class="card-body">
-                    <h6 class="card-title text-success">Fort Munro</h6>
-                    <p class="card-text small">Hill station and scenic spot</p>
+    <!-- Hero Section -->
+    <section class="city-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imgaes/dera-ghazi-khan.jpg');">
+        <div class="container">
+            <div class="row justify-content-center text-center text-white">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Dera Ghazi Khan</h1>
+                    <p class="lead mb-4">Heart of Siraiki Culture</p>
+                    <div class="hero-badges">
+                        <span class="badge bg-primary me-2">Cultural Hub</span>
+                        <span class="badge bg-success me-2">Siraiki Heritage</span>
+                        <span class="badge bg-warning">Punjab</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.33.jpeg" class="card-img-top city-image" alt="Indus River" style="height: 200px; object-fit: cover;">
-                <div class="card-body">
-                    <h6 class="card-title text-success">Indus River Area</h6>
-                    <p class="card-text small">Beautiful riverside locations</p>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-3">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="cities.html">Cities</a></li>
+                <li class="breadcrumb-item active">Dera Ghazi Khan</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Article Header -->
+                <div class="article-header mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge bg-primary me-2">Cultural</span>
+                        <span class="badge bg-success me-2">Siraiki</span>
+                        <small class="text-muted">Published by Discover Pakistan Team</small>
+                    </div>
+                    <h1 class="article-title">Dera Ghazi Khan: The Cultural Heart of Siraiki Region</h1>
+                    <div class="article-meta">
+                        <i class="fas fa-calendar me-2"></i>
+                        <small class="text-muted me-3">Updated December 2024</small>
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <small class="text-muted">Punjab Province, Pakistan</small>
+                    </div>
+                </div>
+
+                <!-- Article Content -->
+                <div class="article-content">
+                    <h2>Historical Background</h2>
+                    <p>Dera Ghazi Khan, founded in the 15th century by Ghazi Khan, is the cultural and administrative center of the Siraiki-speaking region. The city has been a significant trading post along the Indus River and serves as the gateway to Balochistan province.</p>
+                    
+                    <p>The city is renowned for preserving and promoting Siraiki culture, language, and traditions. It has been the center of Siraiki literature and folk music, contributing significantly to Pakistan's cultural diversity.</p>
+
+                    <h2>Famous Places & Landmarks</h2>
+                    <ul>
+                        <li><strong>Fort Munro:</strong> Hill station and summer retreat</li>
+                        <li><strong>Tomb of Ghazi Khan:</strong> Mausoleum of the city's founder</li>
+                        <li><strong>Indus River:</strong> Major river flowing alongside the city</li>
+                        <li><strong>Siraiki Cultural Center:</strong> Hub for Siraiki arts and literature</li>
+                        <li><strong>Koh-e-Suleman Range:</strong> Mountain range near the city</li>
+                        <li><strong>Traditional Bazaars:</strong> Markets showcasing local crafts</li>
+                    </ul>
+
+                    <h2>Culture & Traditions</h2>
+                    <p>Dera Ghazi Khan is the heartland of Siraiki culture, where the melodious Siraiki language and rich folk traditions are preserved. The city is famous for its Siraiki poetry, folk music, and traditional dances like Jhumar and Sammi.</p>
+                    
+                    <p>The annual Siraiki Ajrak and Shalwar Kameez festivals celebrate the region's textile heritage. Traditional crafts include pottery, embroidery, and handwoven textiles that reflect the authentic Siraiki artistic expression.</p>
+
+                    <h2>Food & Cuisine</h2>
+                    <p>The city offers authentic Siraiki cuisine with distinctive flavors:</p>
+                    <ul>
+                        <li><strong>Siraiki Sajji:</strong> Traditional roasted lamb or chicken</li>
+                        <li><strong>Kheer Puri:</strong> Sweet rice pudding with bread</li>
+                        <li><strong>Siraiki Karahi:</strong> Spicy meat curry in traditional style</li>
+                        <li><strong>Multani Sohan:</strong> Traditional sweet delicacy</li>
+                        <li><strong>Lassi:</strong> Traditional yogurt drink</li>
+                    </ul>
+
+                    <h2>Siraiki Heritage</h2>
+                    <p>As the cultural capital of the Siraiki region, Dera Ghazi Khan plays a vital role in:</p>
+                    <ul>
+                        <li><strong>Language Preservation:</strong> Promoting Siraiki literature and poetry</li>
+                        <li><strong>Folk Music:</strong> Traditional Siraiki songs and instruments</li>
+                        <li><strong>Handicrafts:</strong> Authentic Siraiki textiles and pottery</li>
+                        <li><strong>Cultural Events:</strong> Festivals celebrating Siraiki heritage</li>
+                    </ul>
+
+                    <h2>Best Time to Visit</h2>
+                    <p>The best time to visit Dera Ghazi Khan is from November to March when the weather is pleasant. Winter months are ideal for exploring Fort Munro and enjoying the cultural festivals. The Siraiki cultural events are particularly vibrant during the cooler months.</p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.37 (1).jpeg" class="card-img-top city-image" alt="Traditional village" style="height: 200px; object-fit: cover;">
-                <div class="card-body">
-                    <h6 class="card-title text-success">Traditional Villages</h6>
-                    <p class="card-text small">Authentic cultural sites</p>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <!-- Quick Facts -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-pakistan-green text-white">
+                            <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Quick Facts</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><strong>Province:</strong> Punjab</li>
+                                <li><strong>Population:</strong> ~400,000</li>
+                                <li><strong>Founded:</strong> 15th century</li>
+                                <li><strong>Language:</strong> Siraiki, Urdu</li>
+                                <li><strong>Famous For:</strong> Siraiki Culture</li>
+                                <li><strong>Nearby:</strong> Fort Munro</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Related Cities -->
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0">Related Cities</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                <a href="multan.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Multan
+                                </a>
+                                <a href="bahawalpur.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Bahawalpur
+                                </a>
+                                <a href="sukkur.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Sukkur
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2 class="text-success mt-4">Language & Local Food</h2>
-    <p>Pure Siraiki language is spoken, preserving the authentic regional dialect. Traditional foods include roti, saag (leafy vegetables), and simple but nutritious rural cuisine that reflects the agricultural lifestyle.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Discover Pakistan</h5>
+                    <p class="mb-0">Exploring the rich heritage and culture of Pakistan's historic cities.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2024 Discover Pakistan. Educational Project.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <h2 class="text-success mt-4">Special Cultural Highlight</h2>
-    <p>Pure Siraiki language and customs make this city unique. It is the center of Siraiki literature, folk music, and traditional crafts. The city preserves the most authentic form of Siraiki culture in Pakistan.</p>
-
-    <div class="text-center mt-5">
-        <a href="cities.html" class="btn btn-success">Back to Cities</a>
-    </div>
-</div>
-
-<footer class="bg-dark text-white text-center p-3">
-    <p class="mb-1">
-        Discover Pakistan – Historical & Cultural Website
-    </p>
-    <small>
-        Educational Project | BSCS | Frontend Based Historical Website
-    </small>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

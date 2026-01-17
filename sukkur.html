@@ -2,69 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sukkur – Discover Pakistan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukkur - City on River Indus | Discover Pakistan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-pakistan-green fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-mosque me-2"></i>Discover Pakistan
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cities</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cities.html">All Cities</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="lahore.html">Lahore</a></li>
+                            <li><a class="dropdown-item" href="karachi.html">Karachi</a></li>
+                            <li><a class="dropdown-item" href="islamabad.html">Islamabad</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-2" id="darkModeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Discover Pakistan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="cities.html">Cities</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Pakistan</a></li>
-            </ul>
+    <!-- Hero Section -->
+    <section class="city-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imgaes/sukkur.jpg');">
+        <div class="container">
+            <div class="row justify-content-center text-center text-white">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Sukkur</h1>
+                    <p class="lead mb-4">City on River Indus</p>
+                    <div class="hero-badges">
+                        <span class="badge bg-primary me-2">Historical City</span>
+                        <span class="badge bg-success me-2">River Port</span>
+                        <span class="badge bg-warning">Sindh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-3">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="cities.html">Cities</a></li>
+                <li class="breadcrumb-item active">Sukkur</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Article Header -->
+                <div class="article-header mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge bg-primary me-2">Historical</span>
+                        <span class="badge bg-success me-2">Culture</span>
+                        <small class="text-muted">Published by Discover Pakistan Team</small>
+                    </div>
+                    <h1 class="article-title">Sukkur: The Historic City on River Indus</h1>
+                    <div class="article-meta">
+                        <i class="fas fa-calendar me-2"></i>
+                        <small class="text-muted me-3">Updated December 2024</small>
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <small class="text-muted">Sindh Province, Pakistan</small>
+                    </div>
+                </div>
+
+                <!-- Article Content -->
+                <div class="article-content">
+                    <h2>Historical Background</h2>
+                    <p>Sukkur is one of the oldest cities in Sindh, strategically located on the west bank of the River Indus. The city has been an important trading center for centuries, serving as a gateway between upper and lower Sindh. Its history dates back to ancient times when it was known as Aror, the capital of Sindh.</p>
+                    
+                    <p>The famous Lansdowne Bridge, built in 1889, connects Sukkur with Rohri and stands as a testament to British engineering. The city played a crucial role during the British colonial period as a major railway junction and river port.</p>
+
+                    <h2>Famous Places & Landmarks</h2>
+                    <ul>
+                        <li><strong>Lansdowne Bridge:</strong> Historic cantilever bridge over River Indus</li>
+                        <li><strong>Sukkur Barrage:</strong> Major irrigation project completed in 1932</li>
+                        <li><strong>Sadh Belo Temple:</strong> Hindu temple on an island in River Indus</li>
+                        <li><strong>Masum Shah Minaret:</strong> 14th-century historical monument</li>
+                        <li><strong>Sukkur Museum:</strong> Showcases local history and artifacts</li>
+                        <li><strong>Clock Tower:</strong> British-era landmark in the city center</li>
+                    </ul>
+
+                    <h2>Culture & Traditions</h2>
+                    <p>Sukkur represents the rich Sindhi culture with its traditional architecture, handicrafts, and customs. The city is known for its Sindhi Ajrak and Topi, traditional clothing that reflects the cultural identity of the region.</p>
+                    
+                    <p>The people of Sukkur are known for their hospitality and maintain strong connections to their Sindhi heritage. Traditional festivals like Sawan and cultural celebrations are observed with great enthusiasm.</p>
+
+                    <h2>Food & Cuisine</h2>
+                    <p>Sukkur offers authentic Sindhi cuisine with specialties including:</p>
+                    <ul>
+                        <li><strong>Sindhi Biryani:</strong> Aromatic rice dish with unique Sindhi spices</li>
+                        <li><strong>Sai Bhaji:</strong> Traditional spinach and lentil curry</li>
+                        <li><strong>Koki:</strong> Sindhi flatbread with onions and spices</li>
+                        <li><strong>Sindhi Curry:</strong> Tangy vegetable curry</li>
+                        <li><strong>Seyal Mani:</strong> Leftover bread cooked with tomatoes</li>
+                    </ul>
+
+                    <h2>Best Time to Visit</h2>
+                    <p>The best time to visit Sukkur is during the winter months from November to March when the weather is pleasant and suitable for sightseeing. The temperature during this period ranges from 15°C to 25°C, making it ideal for exploring the city's historical sites and enjoying boat rides on the River Indus.</p>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <!-- Quick Facts -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-pakistan-green text-white">
+                            <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Quick Facts</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><strong>Province:</strong> Sindh</li>
+                                <li><strong>Population:</strong> ~500,000</li>
+                                <li><strong>Founded:</strong> Ancient times</li>
+                                <li><strong>Language:</strong> Sindhi, Urdu</li>
+                                <li><strong>Famous For:</strong> Lansdowne Bridge</li>
+                                <li><strong>River:</strong> Indus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Related Cities -->
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0">Related Cities</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                <a href="hyderabad.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Hyderabad
+                                </a>
+                                <a href="karachi.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Karachi
+                                </a>
+                                <a href="multan.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Multan
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
 
-<div class="container my-5 city-detail">
-    <div class="text-center mb-5">
-        <h1 class="display-4 text-success">Sukkur</h1>
-        <p class="lead">City on River Indus</p>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Discover Pakistan</h5>
+                    <p class="mb-0">Exploring the rich heritage and culture of Pakistan's historic cities.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2024 Discover Pakistan. Educational Project.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <h2 class="text-success">City Introduction</h2>
-    <p>Sukkur lies on the banks of River Indus and is known for its beautiful river views, historic bridge, and spiritual significance with many Sufi shrines.</p>
-
-    <h2 class="text-success mt-4">Historical Background</h2>
-    <p>Important trade city throughout history due to its location on River Indus. The city has been a major crossing point and trading center for centuries, connecting different regions of the subcontinent.</p>
-
-    <h2 class="text-success mt-4">Culture & Society</h2>
-    <p>Sindhi traditions dominate with strong spiritual and cultural values. People have a deep connection with River Indus and follow traditional Sindhi customs and festivals.</p>
-
-    <h2 class="text-success mt-4">Lifestyle & Traditions</h2>
-    <p>River-based lifestyle with fishing and agriculture as main occupations. People enjoy boat rides, river festivals, and maintain strong community bonds along the riverbank.</p>
-
-    <h2 class="text-success mt-4">Famous Places</h2>
-    <ul>
-        <li>Lansdowne Bridge - Historic railway bridge over Indus</li>
-        <li>Sadhu Belo - Island temple and spiritual center</li>
-        <li>Sukkur Barrage - Important irrigation structure</li>
-    </ul>
-
-    <h2 class="text-success mt-4">Language & Local Food</h2>
-    <p>Sindhi is the main language. Famous for fresh fish dishes from River Indus, traditional Sindhi curry, and river-side dining experiences.</p>
-
-    <h2 class="text-success mt-4">Special Cultural Highlight</h2>
-    <p>River culture and Sufi shrines make Sukkur unique. The city is known for its spiritual atmosphere, beautiful sunsets over the Indus, and traditional boat-making crafts.</p>
-
-    <div class="text-center mt-5">
-        <a href="cities.html" class="btn btn-success">Back to Cities</a>
-    </div>
-</div>
-
-<footer class="bg-dark text-white text-center p-3">
-    Educational Project – BSCS | Discover Pakistan
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

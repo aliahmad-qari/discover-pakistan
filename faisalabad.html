@@ -2,69 +2,229 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Faisalabad – Discover Pakistan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faisalabad - Manchester of Pakistan | Discover Pakistan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Discover Pakistan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="cities.html">Cities</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Pakistan</a></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Discover Pakistan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="discover.html" role="button">Discover Pakistan</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="discover.html">All Articles</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="lahore.html">Lahore</a></li>
+                            <li><a class="dropdown-item" href="karachi.html">Karachi</a></li>
+                            <li><a class="dropdown-item" href="islamabad.html">Islamabad</a></li>
+                            <li><a class="dropdown-item" href="multan.html">Multan</a></li>
+                            <li><a class="dropdown-item" href="peshawar.html">Peshawar</a></li>
+                            <li><a class="dropdown-item" href="quetta.html">Quetta</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">Travel</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cities.html">All Cities</a></li>
+                            <li><a class="dropdown-item" href="lahore.html">Punjab Cities</a></li>
+                            <li><a class="dropdown-item" href="karachi.html">Sindh Cities</a></li>
+                            <li><a class="dropdown-item" href="peshawar.html">KPK Cities</a></li>
+                            <li><a class="dropdown-item" href="quetta.html">Balochistan Cities</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><button class="btn btn-outline-light btn-sm ms-2" id="themeToggle">🌙</button></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<div class="container my-5 city-detail">
-    <div class="text-center mb-5">
-        <h1 class="display-4 text-success">Faisalabad</h1>
-        <p class="lead">Manchester of Pakistan</p>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center py-5" style="background-image: linear-gradient(rgba(0, 100, 0, 0.7), rgba(40, 167, 69, 0.7)), url('imgaes/WhatsApp Image 2026-01-17 at 15.55.27.jpeg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="cities.html" class="text-white">Cities</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Faisalabad</li>
+                </ol>
+            </nav>
+            <h1 class="display-4 fw-bold mb-3">Faisalabad - Manchester of Pakistan</h1>
+            <p class="lead">Industrial powerhouse and textile capital of Pakistan</p>
+        </div>
+    </section>
 
-    <h2 class="text-success">City Introduction</h2>
-    <p>Faisalabad is known as the Manchester of Pakistan due to its textile industry. It is the third-largest city and a major industrial center.</p>
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <article class="city-detail">
+                        <div class="mb-3">
+                            <span class="badge bg-success me-2">Travel</span>
+                            <span class="badge bg-success me-2">Punjab</span>
+                            <span class="badge bg-success me-2">Industrial City</span>
+                            <span class="badge bg-success">Textile Hub</span>
+                        </div>
 
-    <h2 class="text-success mt-4">Historical Background</h2>
-    <p>Founded during British rule as Lyallpur, named after Sir James Lyall. The city was planned as an agricultural center and later became Pakistan's textile hub.</p>
+                        <div class="mb-4">
+                            <p class="text-muted mb-1">by <strong>Real Pakistan</strong> • January 15, 2026</p>
+                        </div>
 
-    <h2 class="text-success mt-4">Culture & Society</h2>
-    <p>Industrial working culture dominates the city. People are hardworking and business-minded, with strong family values and community bonds.</p>
+                        <div class="mb-5">
+                            <p class="lead">Faisalabad, known as the "Manchester of Pakistan," is the country's third-largest city and industrial capital. Famous for its textile industry and agricultural production, it represents Pakistan's economic strength and entrepreneurial spirit.</p>
+                        </div>
 
-    <h2 class="text-success mt-4">Lifestyle & Traditions</h2>
-    <p>Simple and hardworking lifestyle. People wake up early, work hard, and value education and progress. Traditional Punjabi customs are still followed.</p>
+                        <div class="mb-5">
+                            <h2 class="text-success mb-4">Historical Background</h2>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.27.jpeg" class="img-fluid rounded city-image mb-3" alt="Faisalabad Clock Tower">
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Originally founded as Lyallpur in 1890 by the British, the city was planned as an agricultural center. It was renamed Faisalabad in 1977 after King Faisal of Saudi Arabia.</p>
+                                    <p>The city developed rapidly due to its strategic location in the fertile plains of Punjab and became Pakistan's major textile and industrial hub, earning the nickname "Manchester of Pakistan."</p>
+                                </div>
+                            </div>
+                        </div>
 
-    <h2 class="text-success mt-4">Famous Places</h2>
-    <ul>
-        <li>Clock Tower (Ghanta Ghar) - Historic landmark and city center</li>
-        <li>Jinnah Garden - Beautiful public park</li>
-        <li>Gatwala Wildlife Park - Nature and wildlife sanctuary</li>
-    </ul>
+                        <div class="mb-5">
+                            <h2 class="text-success mb-4">Famous Places to Visit</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">🕐 <strong>Clock Tower (Ghanta Ghar)</strong> - Iconic city landmark</li>
+                                <li class="list-group-item">🏛️ <strong>Faisalabad Museum</strong> - Local history and culture</li>
+                                <li class="list-group-item">🌸 <strong>Jinnah Garden</strong> - Beautiful public park</li>
+                                <li class="list-group-item">🏭 <strong>Textile Mills</strong> - Industrial heritage tours</li>
+                                <li class="list-group-item">🛍️ <strong>D Ground Market</strong> - Shopping and textiles</li>
+                                <li class="list-group-item">🏛️ <strong>University of Agriculture</strong> - Educational landmark</li>
+                            </ul>
+                        </div>
 
-    <h2 class="text-success mt-4">Language & Local Food</h2>
-    <p>Punjabi and Urdu are spoken. Popular foods include daal chawal, street food, and traditional Punjabi dishes. The city is famous for its simple but delicious local cuisine.</p>
+                        <div class="mb-5">
+                            <h2 class="text-success mb-4">Culture & Traditions</h2>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Faisalabad's industrial culture includes:</p>
+                                    <ul>
+                                        <li><strong>Language:</strong> Punjabi, Urdu</li>
+                                        <li><strong>Industry:</strong> Textile manufacturing and agriculture</li>
+                                        <li><strong>Business:</strong> Entrepreneurial and trading community</li>
+                                        <li><strong>Education:</strong> Agricultural and technical institutions</li>
+                                        <li><strong>Sports:</strong> Cricket and field hockey</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.27.jpeg" class="img-fluid rounded city-image" alt="Industrial Culture">
+                                </div>
+                            </div>
+                        </div>
 
-    <h2 class="text-success mt-4">Special Cultural Highlight</h2>
-    <p>Textile industry and labor culture. The city represents the industrial spirit of Pakistan and is known for its contribution to the national economy through textile exports.</p>
+                        <div class="mb-5">
+                            <h2 class="text-success mb-4">Famous Food & Cuisine</h2>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="text-success">Local Favorites</h5>
+                                            <ul class="mb-0">
+                                                <li>Faisalabadi Karahi</li>
+                                                <li>Punjabi Cuisine</li>
+                                                <li>Lassi</li>
+                                                <li>Kulfi</li>
+                                                <li>Samosas</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="text-success">Street Food</h5>
+                                            <ul class="mb-0">
+                                                <li>Chaat</li>
+                                                <li>Gol Gappa</li>
+                                                <li>Jalebi</li>
+                                                <li>Pakoras</li>
+                                                <li>Fresh Sugarcane Juice</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    <div class="text-center mt-5">
-        <a href="cities.html" class="btn btn-success">Back to Cities</a>
-    </div>
-</div>
+                        <div class="mb-5">
+                            <h2 class="text-success mb-4">Best Time to Visit</h2>
+                            <div class="alert alert-success">
+                                <h5>🌤️ Recommended Season: November to March</h5>
+                                <p class="mb-0">Pleasant weather ideal for exploring the city's industrial heritage and markets.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
 
-<footer class="bg-dark text-white text-center p-3">
-    Educational Project – BSCS | Discover Pakistan
-</footer>
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 2rem;">
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0">Quick Facts</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li><strong>Province:</strong> Punjab</li>
+                                    <li><strong>Population:</strong> 3+ million</li>
+                                    <li><strong>Language:</strong> Punjabi, Urdu</li>
+                                    <li><strong>Founded:</strong> 1890</li>
+                                    <li><strong>Area:</strong> 1,230 km²</li>
+                                    <li><strong>Nickname:</strong> Manchester of Pakistan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-success">Discover Pakistan</h5>
+                    <p class="text-muted">Real Pakistan is your ultimate travel guide to discovering Pakistan's heritage.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-success">Contact Us</h5>
+                    <p class="text-muted mb-1"><strong>Address:</strong> Johar Town Lahore, Punjab Pakistan</p>
+                    <p class="text-muted"><strong>Email:</strong> info@realpakistan.com.pk</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-success">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+                        <li><a href="cities.html" class="text-decoration-none text-muted">All Cities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <p class="mb-0 text-muted">Copyright © Real Pakistan 2025. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

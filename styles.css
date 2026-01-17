@@ -1,4 +1,354 @@
 /* Pakistani Cultural Color Scheme */
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #28a745;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -23px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #28a745;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px #28a745;
+}
+
+.timeline-content h5 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+/* Gallery Styles */
+.gallery-img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.place-card {
+    transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Rating Stars */
+.rating i {
+    color: #ddd;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.rating i:hover,
+.rating i.active {
+    color: #ffc107;
+}
+
+/* Professional Navbar */
+.professional-nav {
+    background: #1a1a1a;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .professional-nav {
+    background: #000;
+    box-shadow: 0 2px 10px rgba(255,255,255,0.1);
+}
+
+.professional-nav .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.professional-nav .nav-link:hover {
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.professional-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #28a745;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.professional-nav .nav-link:hover::after {
+    width: 80%;
+}
+
+.professional-nav .dropdown-menu {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    border: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+[data-theme="dark"] .professional-nav .dropdown-menu {
+    background: rgba(26,26,26,0.95);
+    color: white;
+}
+
+.professional-nav .dropdown-item:hover {
+    background: #f8f9fa;
+    color: #1a1a1a;
+}
+
+[data-theme="dark"] .professional-nav .dropdown-item {
+    color: white;
+}
+
+[data-theme="dark"] .professional-nav .dropdown-item:hover {
+    background: #333;
+    color: white;
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: #1e1e1e !important;
+}
+
+[data-theme="dark"] .card {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: white;
+}
+
+[data-theme="dark"] .text-muted {
+    color: #aaa !important;
+}
+
+/* Chatbot Modal */
+.chatbot-modal {
+    position: fixed;
+    bottom: 220px;
+    right: 20px;
+    width: 350px;
+    height: 450px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 1002;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chatbot-header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header h5 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.bot-message, .user-message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.bot-message {
+    background: #f1f3f4;
+    align-self: flex-start;
+}
+
+.user-message {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.chatbot-input button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .chatbot-modal {
+        width: 300px;
+        height: 400px;
+        bottom: 190px;
+        right: 15px;
+    }
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    color: white;
+}
+
+/* AI Chat Button */
+.ai-chat-btn {
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+.ai-chat-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-btn, .ai-chat-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .whatsapp-btn {
+        bottom: 70px;
+        right: 15px;
+    }
+    .ai-chat-btn {
+        bottom: 130px;
+        right: 15px;
+    }
+}
+
+/* Logo hover effect */
+.navbar-brand .logo-text {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navbar-brand:hover .logo-text {
+    opacity: 1;
+    max-width: 200px;
+}
+
+.navbar-brand img {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
 :root {
     --pakistan-green: #006400;
     --light-green: #28a745;

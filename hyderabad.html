@@ -2,69 +2,229 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hyderabad – Discover Pakistan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad - Paris of Sindh | Discover Pakistan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Discover Pakistan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="cities.html">Cities</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Pakistan</a></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Discover Pakistan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="discover.html" role="button">Discover Pakistan</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="discover.html">All Articles</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="lahore.html">Lahore</a></li>
+                            <li><a class="dropdown-item" href="karachi.html">Karachi</a></li>
+                            <li><a class="dropdown-item" href="islamabad.html">Islamabad</a></li>
+                            <li><a class="dropdown-item" href="multan.html">Multan</a></li>
+                            <li><a class="dropdown-item" href="peshawar.html">Peshawar</a></li>
+                            <li><a class="dropdown-item" href="quetta.html">Quetta</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">Travel</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cities.html">All Cities</a></li>
+                            <li><a class="dropdown-item" href="lahore.html">Punjab Cities</a></li>
+                            <li><a class="dropdown-item" href="karachi.html">Sindh Cities</a></li>
+                            <li><a class="dropdown-item" href="peshawar.html">KPK Cities</a></li>
+                            <li><a class="dropdown-item" href="quetta.html">Balochistan Cities</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><button class="btn btn-outline-light btn-sm ms-2" id="themeToggle">🌙</button></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<div class="container my-5 city-detail">
-    <div class="text-center mb-5">
-        <h1 class="display-4 text-success">Hyderabad</h1>
-        <p class="lead">Paris of Sindh</p>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center py-5" style="background-image: linear-gradient(rgba(0, 100, 0, 0.7), rgba(40, 167, 69, 0.7)), url('imgaes/WhatsApp Image 2026-01-17 at 15.55.32.jpeg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="cities.html" class="text-white">Cities</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Hyderabad</li>
+                </ol>
+            </nav>
+            <h1 class="display-4 fw-bold mb-3">Hyderabad - Paris of Sindh</h1>
+            <p class="lead">Historic city with rich Sindhi culture and traditional crafts</p>
+        </div>
+    </section>
 
-    <h2 class="text-success">City Introduction</h2>
-    <p>Hyderabad is a historical Sindhi city known for its rich culture, traditional crafts, and beautiful architecture. It is the second-largest city of Sindh province.</p>
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <article class="city-detail">
+                        <div class="mb-3">
+                            <span class="badge bg-success me-2">Travel</span>
+                            <span class="badge bg-success me-2">Sindh</span>
+                            <span class="badge bg-success me-2">Historic City</span>
+                            <span class="badge bg-success">Sindhi Culture</span>
+                        </div>
 
-    <h2 class="text-success mt-4">Historical Background</h2>
-    <p>Founded by the Talpur rulers in 1768. The city served as the capital of Sindh before British rule and has a rich history of Sindhi culture and traditions.</p>
+                        <div class="mb-4">
+                            <p class="text-muted mb-1">by <strong>Real Pakistan</strong> • January 15, 2026</p>
+                        </div>
 
-    <h2 class="text-success mt-4">Culture & Society</h2>
-    <p>Strong Sindhi culture with emphasis on arts, crafts, and literature. People are known for their peaceful nature, love for poetry, and traditional handicrafts like ajrak and sindhi topi.</p>
+                        <div class="mb-5">
+                            <p class="lead">Hyderabad, known as the "Paris of Sindh," is a historic city founded by the Talpur rulers. Famous for its rich Sindhi culture, traditional crafts, and beautiful architecture, it serves as an important cultural center of Sindh province.</p>
+                        </div>
 
-    <h2 class="text-success mt-4">Lifestyle & Traditions</h2>
-    <p>Traditional Sindhi living with focus on family values and cultural preservation. People celebrate traditional festivals and maintain their ancestral customs and language.</p>
+                        <div class="mb-5">
+                            <h2 class="text-success mb-4">Historical Background</h2>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.32.jpeg" class="img-fluid rounded city-image mb-3" alt="Hyderabad Fort">
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Founded in 1768 by Mian Ghulam Shah Kalhoro, Hyderabad became the capital of Sindh under the Talpur dynasty. The city was strategically built on the east bank of the River Indus.</p>
+                                    <p>Hyderabad flourished as a center of trade, culture, and learning. The city is known for its beautiful palaces, gardens, and traditional Sindhi architecture that reflects its glorious past.</p>
+                                </div>
+                            </div>
+                        </div>
 
-    <h2 class="text-success mt-4">Famous Places</h2>
-    <ul>
-        <li>Pacco Qillo (Hyderabad Fort) - Historic fort</li>
-        <li>Sindh Museum - Cultural heritage museum</li>
-        <li>Tombs of Talpur Mirs - Historic royal tombs</li>
-    </ul>
+                        <div class="mb-5">
+                            <h2 class="text-success mb-4">Famous Places to Visit</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">🏰 <strong>Pacco Qillo (Hyderabad Fort)</strong> - Historic fortress</li>
+                                <li class="list-group-item">🕌 <strong>Tombs of Talpur Mirs</strong> - Royal mausoleums</li>
+                                <li class="list-group-item">🏛️ <strong>Sindhi Cultural Center</strong> - Heritage museum</li>
+                                <li class="list-group-item">🛍️ <strong>Shahi Bazaar</strong> - Traditional crafts market</li>
+                                <li class="list-group-item">🌸 <strong>Rani Bagh</strong> - Historic garden</li>
+                                <li class="list-group-item">🏛️ <strong>University of Sindh</strong> - Educational landmark</li>
+                            </ul>
+                        </div>
 
-    <h2 class="text-success mt-4">Language & Local Food</h2>
-    <p>Sindhi is the main language. Famous for Sindhi biryani, sai bhaji, and traditional sweets. The city offers authentic Sindhi cuisine with unique flavors and cooking styles.</p>
+                        <div class="mb-5">
+                            <h2 class="text-success mb-4">Culture & Traditions</h2>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Hyderabad's rich Sindhi culture includes:</p>
+                                    <ul>
+                                        <li><strong>Language:</strong> Sindhi, Urdu</li>
+                                        <li><strong>Crafts:</strong> Ajrak, Sindhi caps, embroidery</li>
+                                        <li><strong>Music:</strong> Traditional Sindhi folk songs</li>
+                                        <li><strong>Literature:</strong> Sindhi poetry and literature</li>
+                                        <li><strong>Festivals:</strong> Cheti Chand, Sawan</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.32.jpeg" class="img-fluid rounded city-image" alt="Sindhi Culture">
+                                </div>
+                            </div>
+                        </div>
 
-    <h2 class="text-success mt-4">Special Cultural Highlight</h2>
-    <p>Traditional ajrak (block-printed shawl) and Sindhi cap (topi) are symbols of Sindhi culture. The city is famous for its handicrafts, mirror work, and traditional Sindhi embroidery.</p>
+                        <div class="mb-5">
+                            <h2 class="text-success mb-4">Famous Food & Cuisine</h2>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="text-success">Sindhi Specialties</h5>
+                                            <ul class="mb-0">
+                                                <li>Sindhi Biryani</li>
+                                                <li>Sai Bhaji</li>
+                                                <li>Sindhi Curry</li>
+                                                <li>Koki</li>
+                                                <li>Sindhi Kadhi</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="text-success">Traditional Sweets</h5>
+                                            <ul class="mb-0">
+                                                <li>Sindhi Halwa</li>
+                                                <li>Mithai</li>
+                                                <li>Kheer</li>
+                                                <li>Gulab Jamun</li>
+                                                <li>Jalebi</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    <div class="text-center mt-5">
-        <a href="cities.html" class="btn btn-success">Back to Cities</a>
-    </div>
-</div>
+                        <div class="mb-5">
+                            <h2 class="text-success mb-4">Best Time to Visit</h2>
+                            <div class="alert alert-success">
+                                <h5>🌤️ Recommended Season: November to February</h5>
+                                <p class="mb-0">Pleasant weather perfect for exploring historical sites and traditional bazaars.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
 
-<footer class="bg-dark text-white text-center p-3">
-    Educational Project – BSCS | Discover Pakistan
-</footer>
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 2rem;">
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0">Quick Facts</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li><strong>Province:</strong> Sindh</li>
+                                    <li><strong>Population:</strong> 2+ million</li>
+                                    <li><strong>Language:</strong> Sindhi, Urdu</li>
+                                    <li><strong>Founded:</strong> 1768</li>
+                                    <li><strong>Area:</strong> 1,022 km²</li>
+                                    <li><strong>Nickname:</strong> Paris of Sindh</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-success">Discover Pakistan</h5>
+                    <p class="text-muted">Real Pakistan is your ultimate travel guide to discovering Pakistan's heritage.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-success">Contact Us</h5>
+                    <p class="text-muted mb-1"><strong>Address:</strong> Johar Town Lahore, Punjab Pakistan</p>
+                    <p class="text-muted"><strong>Email:</strong> info@realpakistan.com.pk</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-success">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+                        <li><a href="cities.html" class="text-decoration-none text-muted">All Cities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <p class="mb-0 text-muted">Copyright © Real Pakistan 2025. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -50,17 +50,26 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section text-white text-center py-5" style="background-image: linear-gradient(rgba(0, 100, 0, 0.7), rgba(40, 167, 69, 0.7)), url('imgaes/badshahi.jpg'); background-size: cover; background-position: center;">
+    <section class="city-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imgaes/badshahi.jpg'); background-size: cover; background-position: center; min-height: 70vh;">
         <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
-                    <li class="breadcrumb-item"><a href="cities.html" class="text-white">Cities</a></li>
-                    <li class="breadcrumb-item active text-white" aria-current="page">Lahore</li>
-                </ol>
-            </nav>
-            <h1 class="display-4 fw-bold mb-3">Lahore - Heart of Pakistan</h1>
-            <p class="lead">Discover the rich Mughal heritage, vibrant culture, and timeless traditions of Pakistan's cultural capital</p>
+            <div class="row justify-content-center text-center text-white">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb" class="mb-4">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                            <li class="breadcrumb-item"><a href="cities.html" class="text-white">Cities</a></li>
+                            <li class="breadcrumb-item active text-white">Lahore</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-3 fw-bold mb-3">Lahore</h1>
+                    <p class="lead mb-4">Heart of Pakistan - Cultural Capital</p>
+                    <div class="hero-badges">
+                        <span class="badge bg-primary me-2">Mughal Heritage</span>
+                        <span class="badge bg-success me-2">Cultural Hub</span>
+                        <span class="badge bg-warning">Punjab</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -70,6 +79,160 @@
             <div class="row">
                 <!-- Main Article -->
                 <div class="col-lg-8">
+                    <!-- Quick Facts -->
+                    <div class="card mb-5 border-success">
+                        <div class="card-header bg-success text-white">
+                            <h4 class="mb-0"><i class="fas fa-info-circle me-2"></i>Quick Facts</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><strong>Founded:</strong> 1021 AD</li>
+                                        <li><strong>Province:</strong> Punjab</li>
+                                        <li><strong>Population:</strong> 11+ million</li>
+                                        <li><strong>Area:</strong> 1,772 km²</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><strong>Language:</strong> Punjabi, Urdu</li>
+                                        <li><strong>Culture:</strong> Mughal Heritage</li>
+                                        <li><strong>Famous For:</strong> Badshahi Mosque</li>
+                                        <li><strong>Location:</strong> <a href="https://maps.google.com/?q=Lahore,Pakistan" target="_blank" class="text-primary"><i class="fas fa-map-marker-alt"></i> View Map</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Gallery -->
+                    <div class="mb-5">
+                        <h3 class="text-success mb-4"><i class="fas fa-images me-2"></i>Image Gallery</h3>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <img src="imgaes/badshahi.jpg" class="img-fluid rounded gallery-img" alt="Badshahi Mosque" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.27.jpeg" class="img-fluid rounded gallery-img" alt="Lahore Fort">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.28.jpeg" class="img-fluid rounded gallery-img" alt="Shalimar Gardens">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Section -->
+                    <div class="mb-5">
+                        <h3 class="text-success mb-4"><i class="fas fa-clock me-2"></i>Historical Timeline</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h5>1021 AD - Foundation</h5>
+                                    <p>Lahore founded as a major city in the region</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h5>1526-1857 - Mughal Era</h5>
+                                    <p>Golden period with construction of Badshahi Mosque and Lahore Fort</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h5>1849-1947 - British Period</h5>
+                                    <p>Colonial architecture and railway development</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h5>1947-Present - Modern Pakistan</h5>
+                                    <p>Cultural capital and center of arts, literature, and education</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Famous Places -->
+                    <div class="mb-5">
+                        <h3 class="text-success mb-4"><i class="fas fa-landmark me-2"></i>Famous Places</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 place-card">
+                                    <img src="imgaes/badshahi.jpg" class="card-img-top" alt="Badshahi Mosque">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-success">Badshahi Mosque</h5>
+                                        <p class="card-text">One of the largest mosques in the world, built by Mughal Emperor Aurangzeb in 1673.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 place-card">
+                                    <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.27.jpeg" class="card-img-top" alt="Lahore Fort">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-success">Lahore Fort</h5>
+                                        <p class="card-text">UNESCO World Heritage site showcasing Mughal architecture and royal history.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Food & Language -->
+                    <div class="mb-5">
+                        <h3 class="text-success mb-4"><i class="fas fa-utensils me-2"></i>Food & Language</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card border-success">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0">Famous Dishes</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-circle text-success me-2"></i>Lahori Karahi</li>
+                                            <li><i class="fas fa-circle text-success me-2"></i>Paye (Trotters curry)</li>
+                                            <li><i class="fas fa-circle text-success me-2"></i>Haleem</li>
+                                            <li><i class="fas fa-circle text-success me-2"></i>Kulfi & Falooda</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-success">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0">Languages</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-language text-success me-2"></i>Punjabi (Primary)</li>
+                                            <li><i class="fas fa-language text-success me-2"></i>Urdu (Official)</li>
+                                            <li><i class="fas fa-language text-success me-2"></i>English (Business)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Highlight -->
+                    <div class="mb-5">
+                        <h3 class="text-success mb-4"><i class="fas fa-star me-2"></i>Cultural Highlight: Punjabi Heritage</h3>
+                        <div class="alert alert-success">
+                            <h5><i class="fas fa-heart text-danger me-2"></i>Punjabi Culture</h5>
+                            <p class="mb-0">Lahore is the cultural heart of Punjab, known for its vibrant Punjabi traditions, Bhangra dance, colorful festivals like Basant (kite flying), and warm hospitality. The city preserves centuries-old Punjabi customs while embracing modernity.</p>
+                        </div>
+                    </div>
+
+                    <!-- Download Brochure -->
+                    <div class="text-center mb-5">
+                        <button class="btn btn-success btn-lg me-3"><i class="fas fa-download me-2"></i>Download Brochure</button>
+                        <button class="btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#feedbackModal"><i class="fas fa-comment me-2"></i>Leave Feedback</button>
+                    </div>
+                </div>
                     <article class="city-detail">
                         <!-- Category Tags -->
                         <div class="mb-3">
@@ -264,6 +427,7 @@
                                     <li><strong>Founded:</strong> Ancient times</li>
                                     <li><strong>Area:</strong> 1,772 km²</li>
                                     <li><strong>Nickname:</strong> Heart of Pakistan</li>
+                                    <li><strong>Location:</strong> <a href="https://maps.google.com/?q=Lahore,Pakistan" target="_blank" class="text-primary"><i class="fas fa-map-marker-alt"></i> View on Map</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -309,40 +473,20 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h5 class="text-success">Discover Pakistan</h5>
-                    <p class="text-muted">
-                        Real Pakistan is your ultimate travel guide to discovering the breathtaking landscapes, 
-                        rich history, and diverse culture of Pakistan.
-                    </p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h5>Discover Pakistan</h5>
+                    <p class="mb-2">Exploring the rich heritage and culture of Pakistan's historic cities.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/aliahmad-qari" class="text-white me-3" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-ali-ahmad-mern" class="text-white" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h5 class="text-success">Contact Us</h5>
-                    <p class="text-muted mb-1">
-                        <strong>Address:</strong> Johar Town Lahore, Punjab Pakistan
-                    </p>
-                    <p class="text-muted">
-                        <strong>Email:</strong> info@realpakistan.com.pk
-                    </p>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Discover Pakistan © 2026 – All Rights Reserved</p>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h5 class="text-success">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
-                        <li><a href="cities.html" class="text-decoration-none text-muted">All Cities</a></li>
-                        <li><a href="contact.html" class="text-decoration-none text-muted">Contact</a></li>
-                        <li><a href="about.html" class="text-decoration-none text-muted">About</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="border-secondary">
-            <div class="text-center">
-                <p class="mb-0 text-muted">
-                    Copyright © Real Pakistan 2025. All rights reserved
-                </p>
             </div>
         </div>
     </footer>

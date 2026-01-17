@@ -10,9 +10,12 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top professional-nav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Discover Pakistan</a>
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html" title="Discover Pakistan">
+                <img src="imgaes/final logo.png" alt="Discover Pakistan Logo" height="40" class="me-2">
+                <span class="logo-text">Discover Pakistan</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,100 +47,366 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><button class="btn btn-outline-light btn-sm ms-2" id="themeToggle">🌙</button></li>
+                    <li class="nav-item"><button class="btn btn-outline-light btn-sm ms-2" id="themeToggle" onclick="toggleTheme()">🌙</button></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section hero-bg text-white text-center py-5" >
-        <div class="hero-overlay"></div>
-        <div class="container position-relative">
-            <h1 class="display-4 fw-bold mb-4">Explore the Historical & Cultural Cities of Pakistan</h1>
-            <p class="lead">Discover the rich heritage, vibrant culture, and timeless traditions of Pakistan's most beautiful cities</p>
-        </div>
-    </section>
-
-    <!-- Purpose Statement -->
-    <section class="container my-4">
-        <p class="text-center text-muted">
-            This website is designed to highlight the historical background, cultural diversity,
-            traditions, and lifestyles of Pakistan's major cities in an educational manner.
-        </p>
-    </section>
-
-    <!-- Why These Cities Section -->
-    <section class="bg-light py-5">
+    <!-- Enhanced Hero Section -->
+    <section class="hero-section text-white text-center py-5" style="background: linear-gradient(rgba(0,100,0,0.8), rgba(40,167,69,0.8)), url('imgaes/badshahi.jpg') center/cover; min-height: 80vh; display: flex; align-items: center;">
         <div class="container">
-            <h2 class="text-success text-center mb-4">Why These Cities?</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <h5>Historical Importance</h5>
-                    <p class="text-muted">
-                        These cities played a key role in the history of South Asia and Pakistan.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Cultural Diversity</h5>
-                    <p class="text-muted">
-                        Each city represents a unique culture, language, and tradition.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Regional Identity</h5>
-                    <p class="text-muted">
-                        Punjabi, Sindhi, Pashtun, Balochi, and Siraiki cultures are highlighted.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What You Will Learn Section -->
-    <section class="container my-5">
-        <h2 class="text-success text-center mb-4">What You Will Learn</h2>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Historical background of major Pakistani cities</li>
-            <li class="list-group-item">Cultural values, traditions, and social life</li>
-            <li class="list-group-item">Languages and local food of each region</li>
-            <li class="list-group-item">Famous places and heritage sites</li>
-        </ul>
-    </section>
-
-    <!-- Quick Facts Section -->
-    <section class="py-4 bg-light">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="card border-0 bg-transparent">
-                        <div class="card-body">
-                            <h2 class="text-success fw-bold">12</h2>
-                            <p class="text-muted mb-0">Cities</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="hero-badges mb-4">
+                        <span class="badge bg-light text-dark me-2 px-3 py-2"><i class="fas fa-map-marker-alt"></i> 12 Historic Cities</span>
+                        <span class="badge bg-success me-2 px-3 py-2"><i class="fas fa-mosque"></i> Rich Heritage</span>
+                        <span class="badge bg-warning text-dark px-3 py-2"><i class="fas fa-star"></i> Cultural Diversity</span>
+                    </div>
+                    <h1 class="display-3 fw-bold mb-4 hero-title">Discover Pakistan</h1>
+                    <p class="lead mb-4 fs-4">Journey through 5000 years of history across Pakistan's most magnificent cities - from ancient civilizations to modern marvels</p>
+                    <div class="hero-stats row text-center mb-4">
+                        <div class="col-md-3 col-6">
+                            <h3 class="fw-bold">12</h3>
+                            <p class="mb-0">Historic Cities</p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <h3 class="fw-bold">4</h3>
+                            <p class="mb-0">Provinces</p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <h3 class="fw-bold">5000+</h3>
+                            <p class="mb-0">Years History</p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <h3 class="fw-bold">70+</h3>
+                            <p class="mb-0">Languages</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 bg-transparent">
-                        <div class="card-body">
-                            <h2 class="text-success fw-bold">100+</h2>
-                            <p class="text-muted mb-0">Famous Places</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 bg-transparent">
-                        <div class="card-body">
-                            <h2 class="text-success fw-bold">5</h2>
-                            <p class="text-muted mb-0">Languages</p>
-                        </div>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="cities.html" class="btn btn-light btn-lg px-5 py-3"><i class="fas fa-city me-2"></i>Explore Cities</a>
+                        <a href="discover.html" class="btn btn-outline-light btn-lg px-5 py-3"><i class="fas fa-book me-2"></i>Read Articles</a>
+                        <button class="btn btn-success btn-lg px-5 py-3" onclick="downloadBrochure()"><i class="fas fa-download me-2"></i>Download Guide</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Cities Grid -->
+    <!-- Quick Facts Box -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="quick-facts-box bg-light p-4 rounded shadow">
+                        <h3 class="text-success text-center mb-4"><i class="fas fa-info-circle me-2"></i>Quick Facts About Pakistan</h3>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="fact-item">
+                                    <strong><i class="fas fa-calendar-alt text-success me-2"></i>Founded:</strong> August 14, 1947
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fact-item">
+                                    <strong><i class="fas fa-users text-success me-2"></i>Population:</strong> 240+ Million
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fact-item">
+                                    <strong><i class="fas fa-language text-success me-2"></i>National Language:</strong> Urdu
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fact-item">
+                                    <strong><i class="fas fa-map text-success me-2"></i>Area:</strong> 881,913 km²
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fact-item">
+                                    <strong><i class="fas fa-star text-success me-2"></i>Capital:</strong> Islamabad
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fact-item">
+                                    <strong><i class="fas fa-coins text-success me-2"></i>Currency:</strong> Pakistani Rupee (PKR)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-success text-center mb-5"><i class="fas fa-images me-2"></i>Pakistan Heritage Gallery</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="imgaes/badshahi.jpg" class="img-fluid rounded shadow" alt="Badshahi Mosque Lahore" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('imgaes/badshahi.jpg', 'Badshahi Mosque, Lahore')">
+                        <div class="gallery-overlay">
+                            <h5>Badshahi Mosque</h5>
+                            <p>Lahore, Punjab</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="imgaes/mqh_masjid.jpg" class="img-fluid rounded shadow" alt="Faisal Mosque Islamabad" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('imgaes/mqh_masjid.jpg', 'Faisal Mosque, Islamabad')">
+                        <div class="gallery-overlay">
+                            <h5>Faisal Mosque</h5>
+                            <p>Islamabad, Capital</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="imgaes/bahauddin.jpg" class="img-fluid rounded shadow" alt="Multan Shrine" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('imgaes/bahauddin.jpg', 'Shrine of Bahauddin Zakariya, Multan')">
+                        <div class="gallery-overlay">
+                            <h5>Bahauddin Shrine</h5>
+                            <p>Multan, Punjab</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="imgaes/clifton.jpg" class="img-fluid rounded shadow" alt="Clifton Beach Karachi" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('imgaes/clifton.jpg', 'Clifton Beach, Karachi')">
+                        <div class="gallery-overlay">
+                            <h5>Clifton Beach</h5>
+                            <p>Karachi, Sindh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="imgaes/qissa_khwani.jpg" class="img-fluid rounded shadow" alt="Qissa Khwani Bazaar" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('imgaes/qissa_khwani.jpg', 'Qissa Khwani Bazaar, Peshawar')">
+                        <div class="gallery-overlay">
+                            <h5>Qissa Khwani Bazaar</h5>
+                            <p>Peshawar, KPK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="imgaes/bahawalpur_fort.jpg" class="img-fluid rounded shadow" alt="Bahawalpur Fort" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('imgaes/bahawalpur_fort.jpg', 'Derawar Fort, Bahawalpur')">
+                        <div class="gallery-overlay">
+                            <h5>Derawar Fort</h5>
+                            <p>Bahawalpur, Punjab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Historical Timeline -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-success text-center mb-5"><i class="fas fa-history me-2"></i>Pakistan's Historical Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Ancient Civilizations</h4>
+                        <span class="timeline-date">3300-1300 BCE</span>
+                        <p>Indus Valley Civilization flourished in regions of modern-day Pakistan, including Harappa and Mohenjo-daro.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Mughal Empire</h4>
+                        <span class="timeline-date">1526-1857 CE</span>
+                        <p>Mughal rulers built magnificent monuments like Badshahi Mosque, Lahore Fort, and established cultural centers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>British Colonial Period</h4>
+                        <span class="timeline-date">1857-1947 CE</span>
+                        <p>British rule brought railways, administrative systems, and modern infrastructure to the region.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Modern Pakistan</h4>
+                        <span class="timeline-date">1947-Present</span>
+                        <p>Independence led to the creation of Pakistan, development of new cities like Islamabad, and cultural renaissance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Famous Places Cards -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-success text-center mb-5"><i class="fas fa-landmark me-2"></i>Famous Places in Pakistan</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="place-card">
+                        <img src="imgaes/badshahi.jpg" class="card-img-top" alt="Badshahi Mosque">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Badshahi Mosque</h5>
+                            <p class="card-text">One of the largest mosques in the world, built by Mughal Emperor Aurangzeb in 1673.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Lahore, Punjab</span>
+                                <a href="lahore.html" class="btn btn-outline-success btn-sm">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="place-card">
+                        <img src="imgaes/mqh_masjid.jpg" class="card-img-top" alt="Faisal Mosque">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Faisal Mosque</h5>
+                            <p class="card-text">Modern architectural marvel and one of the largest mosques in the world, located in Islamabad.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">Islamabad</span>
+                                <a href="islamabad.html" class="btn btn-outline-success btn-sm">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="place-card">
+                        <img src="imgaes/bahauddin.jpg" class="card-img-top" alt="Multan Shrine">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Bahauddin Zakariya Shrine</h5>
+                            <p class="card-text">Sacred shrine of the great Sufi saint, representing the spiritual heritage of Multan.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-warning text-dark">Multan, Punjab</span>
+                                <a href="multan.html" class="btn btn-outline-success btn-sm">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food & Language Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-success text-center mb-5"><i class="fas fa-utensils me-2"></i>Food & Languages of Pakistan</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-header bg-success text-white">
+                            <h4 class="mb-0"><i class="fas fa-drumstick-bite me-2"></i>Traditional Foods</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="food-item">
+                                        <strong>Biryani</strong>
+                                        <p class="text-muted mb-0">Karachi Special</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="food-item">
+                                        <strong>Nihari</strong>
+                                        <p class="text-muted mb-0">Lahore Favorite</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="food-item">
+                                        <strong>Chapli Kebab</strong>
+                                        <p class="text-muted mb-0">Peshawar Delight</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="food-item">
+                                        <strong>Sajji</strong>
+                                        <p class="text-muted mb-0">Balochi Cuisine</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="food-item">
+                                        <strong>Sohan Halwa</strong>
+                                        <p class="text-muted mb-0">Multan Sweet</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="food-item">
+                                        <strong>Sindhi Curry</strong>
+                                        <p class="text-muted mb-0">Hyderabad Style</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="fas fa-language me-2"></i>Regional Languages</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="language-item">
+                                        <strong>Urdu</strong>
+                                        <p class="text-muted mb-0">National Language</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="language-item">
+                                        <strong>Punjabi</strong>
+                                        <p class="text-muted mb-0">Punjab Province</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="language-item">
+                                        <strong>Sindhi</strong>
+                                        <p class="text-muted mb-0">Sindh Province</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="language-item">
+                                        <strong>Pashto</strong>
+                                        <p class="text-muted mb-0">Khyber Pakhtunkhwa</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="language-item">
+                                        <strong>Balochi</strong>
+                                        <p class="text-muted mb-0">Balochistan</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="language-item">
+                                        <strong>Siraiki</strong>
+                                        <p class="text-muted mb-0">Southern Punjab</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="py-5 bg-light">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center mb-4">
@@ -276,7 +545,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100">
-                        <img src="imgaes/peshawar.jpg" class="card-img-top" alt="Peshawar Travel Guide">
+                        <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.27.jpeg" class="card-img-top" alt="Peshawar Travel Guide">
                         <div class="card-body">
                             <span class="badge bg-primary mb-2">Khyber Pakhtunkhwa</span>
                             <h5 class="card-title">Peshawar Travel Guide – History, Places & Food</h5>
@@ -290,7 +559,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100">
-                        <img src="imgaes/multan.jpg" class="card-img-top" alt="Multan City Guide">
+                        <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.28.jpeg" class="card-img-top" alt="Multan City Guide">
                         <div class="card-body">
                             <span class="badge bg-success mb-2">Punjab</span>
                             <h5 class="card-title">Multan: The City of Saints</h5>
@@ -304,7 +573,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100">
-                        <img src="imgaes/quetta.jpg" class="card-img-top" alt="Quetta Travel Guide">
+                        <img src="imgaes/WhatsApp Image 2026-01-17 at 15.55.30.jpeg" class="card-img-top" alt="Quetta Travel Guide">
                         <div class="card-body">
                             <span class="badge bg-warning mb-2">Balochistan</span>
                             <h5 class="card-title">Quetta: Fruit Garden of Pakistan</h5>
@@ -336,7 +605,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -358,6 +627,35 @@
     <button id="scrollToTop" class="btn btn-success position-fixed" style="bottom: 20px; right: 20px; z-index: 1000; display: none; border-radius: 50%; width: 50px; height: 50px;">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/923079922301" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- AI Chat Button -->
+    <button class="ai-chat-btn" aria-label="AI Chat Assistant" onclick="toggleChatbot()">
+        <i class="fas fa-robot"></i>
+    </button>
+
+    <!-- AI Chatbot Modal -->
+    <div id="chatbotModal" class="chatbot-modal" style="display: none;">
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h5>Pakistan Travel Assistant</h5>
+                <button class="btn-close" onclick="toggleChatbot()">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatMessages">
+                <div class="bot-message">
+                    <strong>Bot:</strong> Hello! I'm your Pakistan travel assistant. Ask me about cities, culture, food, or travel tips!
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="userInput" placeholder="Ask about Pakistan..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>

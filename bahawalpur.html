@@ -2,69 +2,194 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bahawalpur – Discover Pakistan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahawalpur - City of Nawabs | Discover Pakistan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-pakistan-green fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-mosque me-2"></i>Discover Pakistan
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cities</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cities.html">All Cities</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="lahore.html">Lahore</a></li>
+                            <li><a class="dropdown-item" href="karachi.html">Karachi</a></li>
+                            <li><a class="dropdown-item" href="islamabad.html">Islamabad</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-2" id="darkModeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Discover Pakistan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="cities.html">Cities</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Pakistan</a></li>
-            </ul>
+    <!-- Hero Section -->
+    <section class="city-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imgaes/bahawalpur.jpg');">
+        <div class="container">
+            <div class="row justify-content-center text-center text-white">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Bahawalpur</h1>
+                    <p class="lead mb-4">City of Nawabs</p>
+                    <div class="hero-badges">
+                        <span class="badge bg-primary me-2">Royal Heritage</span>
+                        <span class="badge bg-success me-2">Siraiki Culture</span>
+                        <span class="badge bg-warning">Punjab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-3">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="cities.html">Cities</a></li>
+                <li class="breadcrumb-item active">Bahawalpur</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Article Header -->
+                <div class="article-header mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge bg-primary me-2">Royal</span>
+                        <span class="badge bg-success me-2">Siraiki</span>
+                        <small class="text-muted">Published by Discover Pakistan Team</small>
+                    </div>
+                    <h1 class="article-title">Bahawalpur: The Majestic City of Nawabs</h1>
+                    <div class="article-meta">
+                        <i class="fas fa-calendar me-2"></i>
+                        <small class="text-muted me-3">Updated December 2024</small>
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <small class="text-muted">Punjab Province, Pakistan</small>
+                    </div>
+                </div>
+
+                <!-- Article Content -->
+                <div class="article-content">
+                    <h2>Historical Background</h2>
+                    <p>Bahawalpur, founded in 1748 by Nawab Bahawal Khan Abbasi, was once the capital of the princely state of Bahawalpur. The city is renowned for its royal heritage, magnificent palaces, and rich Siraiki culture. It remained an independent state until 1955 when it was merged with Pakistan.</p>
+                    
+                    <p>The Abbasi dynasty ruled Bahawalpur for over 200 years, leaving behind a legacy of architectural marvels and cultural traditions that continue to define the city's identity today.</p>
+
+                    <h2>Famous Places & Landmarks</h2>
+                    <ul>
+                        <li><strong>Noor Mahal:</strong> Magnificent palace built in Italian style</li>
+                        <li><strong>Derawar Fort:</strong> 40-tower fortress in Cholistan Desert</li>
+                        <li><strong>Darbar Mahal:</strong> Former royal residence and museum</li>
+                        <li><strong>Gulzar Mahal:</strong> Beautiful palace with intricate architecture</li>
+                        <li><strong>Tomb of Bibi Jawindi:</strong> 15th-century mausoleum</li>
+                        <li><strong>Cholistan Desert:</strong> Vast desert with ancient forts</li>
+                        <li><strong>Lal Suhanra National Park:</strong> Wildlife sanctuary and biosphere reserve</li>
+                    </ul>
+
+                    <h2>Culture & Traditions</h2>
+                    <p>Bahawalpur is the heart of Siraiki culture, where the melodious Siraiki language and traditions flourish. The city is famous for its Siraiki poetry, folk music, and traditional crafts including pottery, embroidery, and camel skin products.</p>
+                    
+                    <p>The annual Shalimar Festival celebrates the region's cultural heritage with traditional music, dance, and handicrafts. The city's royal past is reflected in its refined cultural practices and hospitality.</p>
+
+                    <h2>Food & Cuisine</h2>
+                    <p>Bahawalpur offers a unique blend of Siraiki and royal cuisine:</p>
+                    <ul>
+                        <li><strong>Siraiki Karahi:</strong> Traditional meat curry with local spices</li>
+                        <li><strong>Sohan Halwa:</strong> Famous sweet delicacy of Bahawalpur</li>
+                        <li><strong>Kheer Puri:</strong> Traditional breakfast combination</li>
+                        <li><strong>Roasted Lamb:</strong> Royal-style meat preparation</li>
+                        <li><strong>Multani Mitti Sweets:</strong> Local confectionery specialties</li>
+                    </ul>
+
+                    <h2>Best Time to Visit</h2>
+                    <p>The ideal time to visit Bahawalpur is from October to March when the weather is pleasant for exploring palaces and desert areas. Winter months offer comfortable temperatures for visiting Cholistan Desert and outdoor historical sites. The Shalimar Festival in February is particularly recommended for cultural enthusiasts.</p>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <!-- Quick Facts -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-pakistan-green text-white">
+                            <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Quick Facts</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><strong>Province:</strong> Punjab</li>
+                                <li><strong>Population:</strong> ~800,000</li>
+                                <li><strong>Founded:</strong> 1748</li>
+                                <li><strong>Language:</strong> Siraiki, Urdu</li>
+                                <li><strong>Famous For:</strong> Noor Mahal</li>
+                                <li><strong>Culture:</strong> Siraiki Heritage</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Related Cities -->
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0">Related Cities</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                <a href="multan.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Multan
+                                </a>
+                                <a href="dera-ghazi-khan.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Dera Ghazi Khan
+                                </a>
+                                <a href="lahore.html" class="list-group-item list-group-item-action">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Lahore
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
 
-<div class="container my-5 city-detail">
-    <div class="text-center mb-5">
-        <h1 class="display-4 text-success">Bahawalpur</h1>
-        <p class="lead">City of Nawabs</p>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Discover Pakistan</h5>
+                    <p class="mb-0">Exploring the rich heritage and culture of Pakistan's historic cities.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2024 Discover Pakistan. Educational Project.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <h2 class="text-success">City Introduction</h2>
-    <p>Bahawalpur was a princely state known for its royal heritage, beautiful palaces, and rich Siraiki culture. It represents the grandeur of former royal states.</p>
-
-    <h2 class="text-success mt-4">Historical Background</h2>
-    <p>Ruled by Nawabs of Bahawalpur for over 200 years. The city was an independent princely state until 1955 and is famous for its royal architecture and cultural heritage.</p>
-
-    <h2 class="text-success mt-4">Culture & Society</h2>
-    <p>Royal and traditional culture with strong Siraiki identity. People maintain the dignity and hospitality associated with royal traditions while preserving their Siraiki language and customs.</p>
-
-    <h2 class="text-success mt-4">Lifestyle & Traditions</h2>
-    <p>Desert lifestyle with royal influences. People follow traditional customs, enjoy folk music and dance, and maintain the cultural practices passed down from the royal era.</p>
-
-    <h2 class="text-success mt-4">Famous Places</h2>
-    <ul>
-        <li>Noor Mahal - Beautiful royal palace</li>
-        <li>Derawar Fort - Historic desert fortress</li>
-        <li>Darbar Mahal - Former royal court</li>
-    </ul>
-
-    <h2 class="text-success mt-4">Language & Local Food</h2>
-    <p>Siraiki is the main language, preserving the regional identity. Famous for traditional sweets, royal cuisine, and desert specialties. The city offers authentic Siraiki dishes and royal-style cooking.</p>
-
-    <h2 class="text-success mt-4">Special Cultural Highlight</h2>
-    <p>Siraiki culture and desert heritage combined with royal traditions. The city is famous for its traditional Siraiki folk music, poetry, and the unique blend of royal and rural cultures.</p>
-
-    <div class="text-center mt-5">
-        <a href="cities.html" class="btn btn-success">Back to Cities</a>
-    </div>
-</div>
-
-<footer class="bg-dark text-white text-center p-3">
-    Educational Project – BSCS | Discover Pakistan
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
