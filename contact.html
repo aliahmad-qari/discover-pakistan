@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Discover Pakistan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Discover Pakistan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="discover.html" role="button">Discover Pakistan</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="discover.html">All Articles</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="lahore.html">Lahore</a></li>
+                            <li><a class="dropdown-item" href="karachi.html">Karachi</a></li>
+                            <li><a class="dropdown-item" href="islamabad.html">Islamabad</a></li>
+                            <li><a class="dropdown-item" href="multan.html">Multan</a></li>
+                            <li><a class="dropdown-item" href="peshawar.html">Peshawar</a></li>
+                            <li><a class="dropdown-item" href="quetta.html">Quetta</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">Travel</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cities.html">All Cities</a></li>
+                            <li><a class="dropdown-item" href="lahore.html">Punjab Cities</a></li>
+                            <li><a class="dropdown-item" href="karachi.html">Sindh Cities</a></li>
+                            <li><a class="dropdown-item" href="peshawar.html">KPK Cities</a></li>
+                            <li><a class="dropdown-item" href="quetta.html">Balochistan Cities</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><button class="btn btn-outline-light btn-sm ms-2" id="themeToggle">🌙</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Contact Us</h1>
+            <p class="lead">Get in touch with us for any questions about Pakistan's heritage</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="text-success mb-4">Send us a Message</h3>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject *</label>
+                                        <select class="form-select" id="subject" required>
+                                            <option value="">Choose a subject</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="travel">Travel Information</option>
+                                            <option value="cultural">Cultural Questions</option>
+                                            <option value="educational">Educational Content</option>
+                                            <option value="feedback">Website Feedback</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message *</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your inquiry..." required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h3 class="text-success mb-4">Contact Information</h3>
+                            
+                            <div class="mb-4">
+                                <h5>📍 Address</h5>
+                                <p class="text-muted">Johar Town Lahore<br>Punjab, Pakistan</p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h5>📧 Email</h5>
+                                <p class="text-muted">info@discoverpakistan.com</p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h5>📱 Phone</h5>
+                                <p class="text-muted">+92 300 1234567</p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h5>🕒 Response Time</h5>
+                                <p class="text-muted">We typically respond within 24 hours</p>
+                            </div>
+
+                            <div>
+                                <h5>🌐 Follow Us</h5>
+                                <div class="d-flex gap-2">
+                                    <a href="#" class="btn btn-outline-success btn-sm">Facebook</a>
+                                    <a href="#" class="btn btn-outline-success btn-sm">Instagram</a>
+                                    <a href="#" class="btn btn-outline-success btn-sm">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-1">Discover Pakistan – Historical & Cultural Website</p>
+        <small>Educational Project | BSCS | Frontend Based Historical Website</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
