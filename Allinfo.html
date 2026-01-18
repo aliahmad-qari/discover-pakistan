@@ -1,214 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Famous Cities - Discover Pakistan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Famous Cities – Discover Pakistan</title>
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top professional-nav">
-        <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html" title="Discover Pakistan">
-                <img src="images/final logo.png" alt="Discover Pakistan Logo" height="40" class="me-2">
-                <span class="logo-text">Discover Pakistan</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="discover.html" role="button">Discover Pakistan</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="discover.html">All Articles</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="lahore.html">Lahore</a></li>
-                            <li><a class="dropdown-item" href="karachi.html">Karachi</a></li>
-                            <li><a class="dropdown-item" href="islamabad.html">Islamabad</a></li>
-                            <li><a class="dropdown-item" href="multan.html">Multan</a></li>
-                            <li><a class="dropdown-item" href="peshawar.html">Peshawar</a></li>
-                            <li><a class="dropdown-item" href="quetta.html">Quetta</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button">Travel</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Allinfo.html">All Cities</a></li>
-                            <li><a class="dropdown-item" href="lahore.html">Punjab Cities</a></li>
-                            <li><a class="dropdown-item" href="karachi.html">Sindh Cities</a></li>
-                            <li><a class="dropdown-item" href="peshawar.html">KPK Cities</a></li>
-                            <li><a class="dropdown-item" href="quetta.html">Balochistan Cities</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><button class="btn btn-outline-light btn-sm ms-2" id="themeToggle" onclick="toggleTheme()">🌙</button></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page Header -->
-    <section class="bg-success text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-5 fw-bold">Historical & Cultural Cities of Pakistan</h1>
-            <p class="lead">Explore 12 magnificent cities that showcase Pakistan's rich heritage</p>
-        </div>
-    </section>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="./index.html">
+      <img src="./images/final-logo.png" height="40" class="me-2" alt="logo">
+      Discover Pakistan
+    </a>
 
-    <!-- Cities Grid -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/badshahi.jpg" class="card-img-top" alt="Lahore">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Lahore</h5>
-                            <p class="card-text">Known as the heart of Pakistan, famous for its rich Mughal history, vibrant culture, and delicious food.</p>
-                            <a href="lahore.html" class="btn btn-success">Explore Lahore</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/clifton.jpg" class="card-img-top" alt="Karachi">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Karachi</h5>
-                            <p class="card-text">Pakistan's largest city and economic hub, known for its diversity and beautiful coastline.</p>
-                            <a href="karachi.html" class="btn btn-success">Explore Karachi</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/mqh_masjid.jpg" class="card-img-top" alt="Islamabad">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Islamabad</h5>
-                            <p class="card-text">The beautiful capital city, planned in the 1960s, known for its modern architecture and natural beauty.</p>
-                            <a href="islamabad.html" class="btn btn-success">Explore Islamabad</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/WhatsApp Image 2026-01-17 at 15.55.27.jpeg" class="card-img-top" alt="Faisalabad">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Faisalabad</h5>
-                            <p class="card-text">Known as the Manchester of Pakistan, famous for its textile industry and hardworking culture.</p>
-                            <a href="faisalabad.html" class="btn btn-success">Explore Faisalabad</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/bahauddin.jpg" class="card-img-top" alt="Multan">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Multan</h5>
-                            <p class="card-text">Called the city of saints, one of the oldest cities with rich Sufi traditions and Siraiki culture.</p>
-                            <a href="multan.html" class="btn btn-success">Explore Multan</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/qissa_khwani.jpg" class="card-img-top" alt="Peshawar">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Peshawar</h5>
-                            <p class="card-text">Gateway to Khyber Pass, ancient city with Gandhara civilization roots and strong Pashtun culture.</p>
-                            <a href="peshawar.html" class="btn btn-success">Explore Peshawar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/WhatsApp Image 2026-01-17 at 15.55.30.jpeg" class="card-img-top" alt="Quetta">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Quetta</h5>
-                            <p class="card-text">Capital of Balochistan, known for its beautiful mountains, fruits, and Balochi tribal traditions.</p>
-                            <a href="quetta.html" class="btn btn-success">Explore Quetta</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/WhatsApp Image 2026-01-17 at 15.55.32.jpeg" class="card-img-top" alt="Hyderabad">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Hyderabad</h5>
-                            <p class="card-text">Historical Sindhi city founded by Talpur rulers, famous for Sindhi culture and traditional crafts.</p>
-                            <a href="hyderabad.html" class="btn btn-success">Explore Hyderabad</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/WhatsApp Image 2026-01-17 at 15.55.33.jpeg" class="card-img-top" alt="Sukkur">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Sukkur</h5>
-                            <p class="card-text">Beautiful city on the banks of River Indus, known for its river culture and Sufi shrines.</p>
-                            <a href="sukkur.html" class="btn btn-success">Explore Sukkur</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/bahawalpur_fort.jpg" class="card-img-top" alt="Bahawalpur">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Bahawalpur</h5>
-                            <p class="card-text">Former princely state ruled by Nawabs, known for royal heritage and Siraiki desert culture.</p>
-                            <a href="bahawalpur.html" class="btn btn-success">Explore Bahawalpur</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/WhatsApp Image 2026-01-17 at 15.55.35.jpeg" class="card-img-top" alt="Sialkot">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Sialkot</h5>
-                            <p class="card-text">Famous for sports goods manufacturing and birthplace of Allama Iqbal, the national poet.</p>
-                            <a href="sialkot.html" class="btn btn-success">Explore Sialkot</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card city-card h-100">
-                        <img src="images/WhatsApp Image 2026-01-17 at 15.55.36.jpeg" class="card-img-top" alt="Dera Ghazi Khan">
-                        <div class="card-body">
-                            <h5 class="card-title text-success">Dera Ghazi Khan</h5>
-                            <p class="card-text">Pure Siraiki city founded by Ghazi Khan Mirrani, known for authentic Siraiki language and customs.</p>
-                            <a href="dera-ghazi-khan.html" class="btn btn-success">Explore DG Khan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h5>Discover Pakistan</h5>
-                    <p class="mb-2">Exploring the rich heritage and culture of Pakistan's historic cities.</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/aliahmad-qari" class="text-white me-3" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-                        <a href="https://www.linkedin.com/in/muhammad-ali-ahmad-mern" class="text-white" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0">Discover Pakistan © 2026 – All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./Allinfo.html">Cities</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+<!-- HEADER -->
+<section class="bg-success text-white text-center py-5">
+  <div class="container">
+    <h1 class="fw-bold">Historical & Cultural Cities of Pakistan</h1>
+    <p class="lead">Explore the heritage, culture & beauty of Pakistan</p>
+  </div>
+</section>
+
+<!-- CITIES -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="./images/badshahi.jpg" class="card-img-top" alt="Lahore">
+          <div class="card-body">
+            <h5 class="text-success">Lahore</h5>
+            <p>Heart of Pakistan, rich Mughal heritage and food culture.</p>
+            <a href="./lahore.html" class="btn btn-success w-100">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="./images/clifton.jpg" class="card-img-top" alt="Karachi">
+          <div class="card-body">
+            <h5 class="text-success">Karachi</h5>
+            <p>Economic hub with coastline and diverse culture.</p>
+            <a href="./karachi.html" class="btn btn-success w-100">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="./images/mqh_masjid.jpg" class="card-img-top" alt="Islamabad">
+          <div class="card-body">
+            <h5 class="text-success">Islamabad</h5>
+            <p>Modern capital surrounded by greenery.</p>
+            <a href="./islamabad.html" class="btn btn-success w-100">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="./images/bahauddin.jpg" class="card-img-top" alt="Multan">
+          <div class="card-body">
+            <h5 class="text-success">Multan</h5>
+            <p>City of Saints with Sufi heritage.</p>
+            <a href="./multan.html" class="btn btn-success w-100">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="./images/qissa_khwani.jpg" class="card-img-top" alt="Peshawar">
+          <div class="card-body">
+            <h5 class="text-success">Peshawar</h5>
+            <p>Ancient city of Gandhara civilization.</p>
+            <a href="./peshawar.html" class="btn btn-success w-100">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="./images/bahawalpur_fort.jpg" class="card-img-top" alt="Bahawalpur">
+          <div class="card-body">
+            <h5 class="text-success">Bahawalpur</h5>
+            <p>Royal Nawabi state & desert culture.</p>
+            <a href="./bahawalpur.html" class="btn btn-success w-100">Explore</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-1">Discover Pakistan © 2026</p>
+  <div>
+    <a href="https://github.com/aliahmad-qari" class="text-white me-3"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/muhammad-ali-ahmad-mern" class="text-white"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
+
 </body>
 </html>
