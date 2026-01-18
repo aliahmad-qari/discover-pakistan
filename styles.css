@@ -783,6 +783,172 @@ footer {
     }
 }
 
+/* ========== TESTIMONIALS SECTION STYLES ========== */
+.testimonials-section {
+    position: relative;
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.testimonial-card .card-body {
+    position: relative;
+}
+
+.quote-icon {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover .quote-icon {
+    transform: scale(1.1);
+}
+
+.avatar-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.rating i {
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for testimonials */
+@media (max-width: 768px) {
+    .testimonial-card .card-body {
+        padding: 1.5rem !important;
+    }
+    
+    .avatar-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* ========== REVIEW FORM SECTION STYLES ========== */
+.review-form-section {
+    position: relative;
+}
+
+.star-rating {
+    display: flex;
+    gap: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.star-rating i {
+    color: #ddd;
+    transition: all 0.3s ease;
+}
+
+.star-rating i:hover,
+.star-rating i.active {
+    color: #ffc107;
+    transform: scale(1.2);
+}
+
+.star-rating i.fas {
+    color: #ffc107;
+}
+
+/* Review form animations */
+.review-form-section .form-control:focus,
+.review-form-section .form-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* ========== NEWSLETTER SECTION STYLES ========== */
+.newsletter-section {
+    overflow: hidden;
+}
+
+.newsletter-form .input-group {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.newsletter-form .form-control {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+}
+
+.newsletter-form .form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.newsletter-form .input-group-text {
+    padding: 0.75rem 1rem;
+}
+
+.newsletter-form .btn {
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-form .btn-light {
+    color: #28a745;
+}
+
+.newsletter-form .btn-light:hover {
+    background-color: #fff;
+    color: #006400;
+}
+
+/* Success Message Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert.show-message {
+    animation: slideDown 0.5s ease;
+}
+
+/* Responsive adjustments for newsletter */
+@media (max-width: 768px) {
+    .newsletter-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .newsletter-section .lead {
+        font-size: 1rem;
+    }
+    
+    .newsletter-form .btn {
+        margin-top: 0;
+    }
+}
+
 
 /* ========== ENHANCED DARK MODE STYLES ========== */
 

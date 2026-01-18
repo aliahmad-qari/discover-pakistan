@@ -216,3 +216,163 @@ if (animateBtn) {
         });
     });
 }
+
+// ========== STAR RATING FUNCTIONALITY ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const starRating = document.getElementById('starRating');
+    const ratingValue = document.getElementById('ratingValue');
+    
+    if (starRating && ratingValue) {
+        const stars = starRating.querySelectorAll('i');
+        
+        stars.forEach((star, index) => {
+            star.addEventListener('click', function() {
+                const rating = this.getAttribute('data-rating');
+                ratingValue.value = rating;
+                
+                // Update star display
+                stars.forEach((s, i) => {
+                    if (i < rating) {
+                        s.classList.remove('far');
+                        s.classList.add('fas', 'active');
+                    } else {
+                        s.classList.remove('fas', 'active');
+                        s.classList.add('far');
+                    }
+                });
+            });
+            
+            // Hover effect
+            star.addEventListener('mouseenter', function() {
+                const rating = this.getAttribute('data-rating');
+                stars.forEach((s, i) => {
+                    if (i < rating) {
+                        s.classList.add('fas');
+                        s.classList.remove('far');
+                    } else {
+                        s.classList.add('far');
+                        s.classList.remove('fas');
+                    }
+                });
+            });
+        });
+        
+        // Reset on mouse leave
+        starRating.addEventListener('mouseleave', function() {
+            const currentRating = ratingValue.value;
+            stars.forEach((s, i) => {
+                if (i < currentRating) {
+                    s.classList.add('fas', 'active');
+                    s.classList.remove('far');
+                } else {
+                    s.classList.add('far');
+                    s.classList.remove('fas', 'active');
+                }
+            });
+        });
+    }
+});
+
+// ========== REVIEW FORM SUBMISSION ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const reviewForm = document.getElementById('reviewForm');
+    const reviewSuccessMessage = document.getElementById('reviewSuccessMessage');
+    
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('reviewName').value.trim();
+            const email = document.getElementById('reviewEmail').value.trim();
+            const city = document.getElementById('cityVisited').value;
+            const rating = document.getElementById('ratingValue').value;
+            const reviewText = document.getElementById('reviewText').value.trim();
+            
+            // Validate rating
+            if (rating === '0' || rating === '') {
+                alert('Please select a rating!');
+                return;
+            }
+            
+            // Show success message
+            reviewSuccessMessage.classList.remove('d-none');
+            reviewSuccessMessage.classList.add('show-message');
+            
+            // Log the review data (in production, send to server)
+            console.log('Review Submitted:', {
+                name: name,
+                email: email,
+                city: city,
+                rating: rating,
+                review: reviewText
+            });
+            
+            // Reset form
+            reviewForm.reset();
+            
+            // Reset star rating
+            const stars = document.querySelectorAll('#starRating i');
+            stars.forEach(star => {
+                star.classList.remove('fas', 'active');
+                star.classList.add('far');
+            });
+            document.getElementById('ratingValue').value = '0';
+            
+            // Scroll to success message
+            reviewSuccessMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Hide success message after 5 seconds
+            setTimeout(function() {
+                reviewSuccessMessage.classList.add('d-none');
+                reviewSuccessMessage.classList.remove('show-message');
+            }, 5000);
+        });
+    }
+});
+
+// ========== NEWSLETTER SUBSCRIPTION ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const newsletterForm = document.getElementById('newsletterForm');
+    const emailInput = document.getElementById('emailInput');
+    const newsletterSuccessMessage = document.getElementById('newsletterSuccessMessage');
+    
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get email value
+            const email = emailInput.value.trim();
+            
+            // Validate email
+            if (!email || !isValidEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Show success message
+            newsletterSuccessMessage.classList.remove('d-none');
+            newsletterSuccessMessage.classList.add('show-message');
+            
+            // Log the subscription (in production, send to server)
+            console.log('Newsletter Subscription:', email);
+            
+            // Reset form
+            newsletterForm.reset();
+            
+            // Scroll to success message
+            newsletterSuccessMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Hide success message after 5 seconds
+            setTimeout(function() {
+                newsletterSuccessMessage.classList.add('d-none');
+                newsletterSuccessMessage.classList.remove('show-message');
+            }, 5000);
+        });
+    }
+    
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+});
