@@ -739,3 +739,420 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+
+/* Statistics Counter Section */
+.stats-counter-section {
+    overflow: hidden;
+}
+
+.stats-counter-section .stat-item {
+    transition: transform 0.3s ease;
+}
+
+.stats-counter-section .stat-item:hover {
+    transform: translateY(-10px);
+}
+
+.stats-counter-section .stat-item i {
+    transition: transform 0.3s ease;
+}
+
+.stats-counter-section .stat-item:hover i {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Responsive adjustments for stats */
+@media (max-width: 768px) {
+    .stats-counter-section .stat-number {
+        font-size: 2.5rem !important;
+    }
+    
+    .stats-counter-section .stat-item i {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-counter-section .stat-number {
+        font-size: 2rem !important;
+    }
+    
+    .stats-counter-section .stat-item i {
+        font-size: 2rem !important;
+    }
+}
+
+
+/* ========== ENHANCED DARK MODE STYLES ========== */
+
+/* Body and Background */
+[data-theme="dark"] body {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Headings */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: #ffffff !important;
+}
+
+/* Text Colors */
+[data-theme="dark"] p {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .text-dark {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .text-muted {
+    color: #b0b0b0 !important;
+}
+
+/* Backgrounds */
+[data-theme="dark"] .bg-white {
+    background-color: #1e1e1e !important;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: #2a2a2a !important;
+}
+
+[data-theme="dark"] section.bg-light {
+    background-color: #1a1a1a !important;
+}
+
+/* Cards */
+[data-theme="dark"] .card {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .card-header {
+    background-color: #333 !important;
+    border-color: #444 !important;
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .card-body {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .card-footer {
+    background-color: #333 !important;
+    border-color: #444 !important;
+}
+
+[data-theme="dark"] .card-title {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .card-text {
+    color: #e0e0e0 !important;
+}
+
+/* City Cards */
+[data-theme="dark"] .city-card {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+}
+
+[data-theme="dark"] .city-card:hover {
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Place Cards */
+[data-theme="dark"] .place-card {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+}
+
+/* Testimonial Cards */
+[data-theme="dark"] .testimonial-card {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+}
+
+/* Buttons */
+[data-theme="dark"] .btn-light {
+    background-color: #444 !important;
+    border-color: #555 !important;
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .btn-light:hover {
+    background-color: #555 !important;
+    border-color: #666 !important;
+}
+
+[data-theme="dark"] .btn-outline-light {
+    border-color: #666 !important;
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .btn-outline-light:hover {
+    background-color: #444 !important;
+    border-color: #666 !important;
+}
+
+/* Forms */
+[data-theme="dark"] .form-control {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .form-control:focus {
+    background-color: #333 !important;
+    border-color: #28a745 !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .input-group-text {
+    background-color: #333 !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Badges */
+[data-theme="dark"] .badge.bg-light {
+    background-color: #444 !important;
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .badge.text-dark {
+    color: #ffffff !important;
+}
+
+/* Alerts */
+[data-theme="dark"] .alert-light {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Timeline */
+[data-theme="dark"] .timeline-content {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .timeline-content h4,
+[data-theme="dark"] .timeline-content h5 {
+    color: #28a745 !important;
+}
+
+/* Gallery */
+[data-theme="dark"] .gallery-item {
+    background-color: #2a2a2a !important;
+}
+
+[data-theme="dark"] .gallery-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent) !important;
+}
+
+/* Quick Facts Box */
+[data-theme="dark"] .quick-facts-box {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+}
+
+[data-theme="dark"] .fact-item {
+    color: #e0e0e0 !important;
+}
+
+/* Food and Language Items */
+[data-theme="dark"] .food-item,
+[data-theme="dark"] .language-item {
+    color: #e0e0e0 !important;
+}
+
+/* Breadcrumb */
+[data-theme="dark"] .breadcrumb {
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] .breadcrumb-item a {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .breadcrumb-item.active {
+    color: #b0b0b0 !important;
+}
+
+/* Modal */
+[data-theme="dark"] .modal-content {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+}
+
+[data-theme="dark"] .modal-header {
+    background-color: #333 !important;
+    border-color: #444 !important;
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .modal-body {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .modal-footer {
+    background-color: #333 !important;
+    border-color: #444 !important;
+}
+
+/* Chatbot */
+[data-theme="dark"] .chatbot-modal {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+}
+
+[data-theme="dark"] .chatbot-header {
+    background-color: #1a472a !important;
+}
+
+[data-theme="dark"] .chatbot-messages {
+    background-color: #1e1e1e !important;
+}
+
+[data-theme="dark"] .bot-message {
+    background-color: #333 !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .user-message {
+    background-color: #1a472a !important;
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .chatbot-input input {
+    background-color: #333 !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .chatbot-input button {
+    background-color: #28a745 !important;
+}
+
+/* Statistics Counter - Keep Green Background */
+[data-theme="dark"] .stats-counter-section {
+    /* Keep the green background in dark mode */
+    background: linear-gradient(135deg, #006400 0%, #28a745 100%) !important;
+}
+
+/* Newsletter Section - Keep Green Background */
+[data-theme="dark"] .newsletter-section {
+    /* Keep the green background in dark mode */
+    background: linear-gradient(135deg, #006400 0%, #28a745 100%) !important;
+}
+
+/* Footer - Keep Dark */
+[data-theme="dark"] footer {
+    background-color: #000 !important;
+}
+
+/* Hero Section - Adjust Overlay */
+[data-theme="dark"] .hero-section {
+    /* Slightly darker overlay in dark mode */
+}
+
+/* Borders */
+[data-theme="dark"] .border {
+    border-color: #444 !important;
+}
+
+[data-theme="dark"] .border-top,
+[data-theme="dark"] .border-bottom,
+[data-theme="dark"] .border-left,
+[data-theme="dark"] .border-right {
+    border-color: #444 !important;
+}
+
+/* Shadows - Lighter in Dark Mode */
+[data-theme="dark"] .shadow {
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-theme="dark"] .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-theme="dark"] .shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Links */
+[data-theme="dark"] a {
+    color: #4db8ff !important;
+}
+
+[data-theme="dark"] a:hover {
+    color: #80ccff !important;
+}
+
+[data-theme="dark"] .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+[data-theme="dark"] .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Success Text Color */
+[data-theme="dark"] .text-success {
+    color: #4ade80 !important;
+}
+
+/* Tables */
+[data-theme="dark"] .table {
+    color: #e0e0e0 !important;
+    background-color: #2a2a2a !important;
+}
+
+[data-theme="dark"] .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #333 !important;
+}
+
+/* List Groups */
+[data-theme="dark"] .list-group-item {
+    background-color: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .list-group-item:hover {
+    background-color: #333 !important;
+}
+
+/* Avatar Circle */
+[data-theme="dark"] .avatar-circle {
+    /* Keep original colors for avatars */
+}
+
+/* Rating Stars */
+[data-theme="dark"] .rating i {
+    /* Keep original star colors */
+}
+
+/* Smooth Transition for Theme Switch */
+body,
+.card,
+.bg-light,
+.bg-white,
+.text-muted,
+.form-control,
+.btn,
+.modal-content,
+.navbar {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

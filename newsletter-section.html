@@ -1,0 +1,210 @@
+<!-- ========== NEWSLETTER SUBSCRIPTION SECTION ========== -->
+<!-- Add this section to your index.html or any page -->
+<!-- Requires: Bootstrap 5, Font Awesome 6 -->
+
+<section class="newsletter-section py-5 bg-success text-white position-relative">
+    <div class="container position-relative" style="z-index: 2;">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <!-- Section Header -->
+                <div class="mb-4">
+                    <i class="fas fa-envelope fa-3x mb-3 opacity-75"></i>
+                    <h2 class="fw-bold mb-3">Stay Updated with Pakistan's Heritage</h2>
+                    <p class="lead mb-4 opacity-90">
+                        Subscribe to our newsletter and receive the latest updates about 
+                        Pakistan's historical sites, travel tips, and cultural events.
+                    </p>
+                </div>
+
+                <!-- Newsletter Form -->
+                <form id="newsletterForm" class="newsletter-form">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-md-7">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-white border-0">
+                                    <i class="fas fa-envelope text-success"></i>
+                                </span>
+                                <input 
+                                    type="email" 
+                                    class="form-control border-0" 
+                                    id="emailInput" 
+                                    placeholder="Enter your email address" 
+                                    required
+                                    aria-label="Email address">
+                            </div>
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn btn-light btn-lg px-4 w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Privacy Notice -->
+                    <p class="small mt-3 mb-0 opacity-75">
+                        <i class="fas fa-lock me-1"></i>
+                        We respect your privacy. Unsubscribe at any time.
+                    </p>
+                </form>
+
+                <!-- Success Message (Hidden by default) -->
+                <div id="successMessage" class="alert alert-light mt-4 d-none" role="alert">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <strong>Thank you for subscribing!</strong> 
+                    You'll receive our latest updates soon.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Pattern -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, #006400 0%, #28a745 100%); opacity: 0.95; z-index: 0;"></div>
+</section>
+
+<!-- ========== CSS STYLES ========== -->
+<style>
+/* Newsletter Section Styles */
+.newsletter-section {
+    overflow: hidden;
+}
+
+.newsletter-form .input-group {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.newsletter-form .form-control {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+}
+
+.newsletter-form .form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.newsletter-form .input-group-text {
+    padding: 0.75rem 1rem;
+}
+
+.newsletter-form .btn {
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-form .btn-light {
+    color: #28a745;
+}
+
+.newsletter-form .btn-light:hover {
+    background-color: #fff;
+    color: #006400;
+}
+
+/* Success Message Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert.show-message {
+    animation: slideDown 0.5s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .newsletter-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .newsletter-section .lead {
+        font-size: 1rem;
+    }
+    
+    .newsletter-form .btn {
+        margin-top: 0;
+    }
+}
+</style>
+
+<!-- ========== JAVASCRIPT CODE ========== -->
+<script>
+// Newsletter Subscription Handler
+(function() {
+    'use strict';
+    
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initNewsletter);
+    } else {
+        initNewsletter();
+    }
+    
+    function initNewsletter() {
+        const form = document.getElementById('newsletterForm');
+        const emailInput = document.getElementById('emailInput');
+        const successMessage = document.getElementById('successMessage');
+        
+        if (!form) return;
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get email value
+            const email = emailInput.value.trim();
+            
+            // Validate email
+            if (!email || !isValidEmail(email)) {
+                showAlert('Please enter a valid email address.', 'warning');
+                return;
+            }
+            
+            // Show success message
+            showSuccessMessage();
+            
+            // Also show browser alert
+            alert('Thank you for subscribing!');
+            
+            // Reset form
+            form.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(function() {
+                hideSuccessMessage();
+            }, 5000);
+        });
+        
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        function showSuccessMessage() {
+            successMessage.classList.remove('d-none');
+            successMessage.classList.add('show-message');
+        }
+        
+        function hideSuccessMessage() {
+            successMessage.classList.add('d-none');
+            successMessage.classList.remove('show-message');
+        }
+        
+        function showAlert(message, type) {
+            alert(message);
+        }
+    }
+})();
+</script>

@@ -1,0 +1,195 @@
+<!-- ========== TESTIMONIALS SECTION ========== -->
+<!-- Add this section to your index.html or any page -->
+<!-- Requires: Bootstrap 5, Font Awesome 6 -->
+
+<section class="testimonials-section py-5 bg-light">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+            <h2 class="text-success fw-bold mb-3">
+                <i class="fas fa-quote-left me-2"></i>What Travelers Say
+            </h2>
+            <p class="text-muted lead">Hear from those who explored Pakistan's rich heritage</p>
+        </div>
+
+        <!-- Testimonials Cards -->
+        <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <!-- Quote Icon -->
+                        <div class="quote-icon text-success mb-3">
+                            <i class="fas fa-quote-left fa-2x opacity-50"></i>
+                        </div>
+                        
+                        <!-- Testimonial Text -->
+                        <p class="card-text text-muted mb-4">
+                            "Exploring Pakistan's historical sites was an unforgettable experience! 
+                            The Badshahi Mosque in Lahore and the ancient ruins of Mohenjo-daro 
+                            left me speechless. The rich culture and warm hospitality made this 
+                            trip truly special."
+                        </p>
+                        
+                        <!-- Rating Stars -->
+                        <div class="rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        
+                        <!-- Author Info -->
+                        <div class="d-flex align-items-center">
+                            <div class="avatar-circle bg-success text-white me-3">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Sarah Johnson</h6>
+                                <small class="text-muted">Travel Blogger, USA</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <!-- Quote Icon -->
+                        <div class="quote-icon text-success mb-3">
+                            <i class="fas fa-quote-left fa-2x opacity-50"></i>
+                        </div>
+                        
+                        <!-- Testimonial Text -->
+                        <p class="card-text text-muted mb-4">
+                            "Pakistan's diverse landscapes and historical treasures exceeded all 
+                            expectations. From the majestic Faisal Mosque to the vibrant streets 
+                            of Karachi, every moment was magical. The food alone is worth the trip!"
+                        </p>
+                        
+                        <!-- Rating Stars -->
+                        <div class="rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        
+                        <!-- Author Info -->
+                        <div class="d-flex align-items-center">
+                            <div class="avatar-circle bg-primary text-white me-3">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Ahmed Khan</h6>
+                                <small class="text-muted">Photographer, UK</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-card card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <!-- Quote Icon -->
+                        <div class="quote-icon text-success mb-3">
+                            <i class="fas fa-quote-left fa-2x opacity-50"></i>
+                        </div>
+                        
+                        <!-- Testimonial Text -->
+                        <p class="card-text text-muted mb-4">
+                            "As a history enthusiast, Pakistan was a dream destination. The Mughal 
+                            architecture, ancient civilizations, and Sufi shrines tell stories of 
+                            5000 years. This website helped me plan the perfect cultural journey!"
+                        </p>
+                        
+                        <!-- Rating Stars -->
+                        <div class="rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        
+                        <!-- Author Info -->
+                        <div class="d-flex align-items-center">
+                            <div class="avatar-circle bg-warning text-dark me-3">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Maria Garcia</h6>
+                                <small class="text-muted">History Teacher, Spain</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CSS STYLES ========== -->
+<style>
+/* Testimonials Section Styles */
+.testimonials-section {
+    position: relative;
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.testimonial-card .card-body {
+    position: relative;
+}
+
+.quote-icon {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover .quote-icon {
+    transform: scale(1.1);
+}
+
+.avatar-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.rating i {
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonial-card .card-body {
+        padding: 1.5rem !important;
+    }
+    
+    .avatar-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+</style>

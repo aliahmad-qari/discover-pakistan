@@ -2,17 +2,19 @@
 // Scroll to top functionality
 const scrollToTopBtn = document.getElementById('scrollToTop');
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
-        scrollToTopBtn.style.display = 'block';
-    } else {
-        scrollToTopBtn.style.display = 'none';
-    }
-});
+if (scrollToTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
 
-scrollToTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
 
 // Rating functionality
 document.addEventListener('DOMContentLoaded', function() {
@@ -31,10 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Theme toggle functionality
+// Theme toggle functionality (FIXED - Single implementation)
 function toggleTheme() {
     const body = document.body;
     const themeToggle = document.getElementById('themeToggle');
+    
+    if (!themeToggle) return;
     
     if (body.getAttribute('data-theme') === 'dark') {
         body.removeAttribute('data-theme');
@@ -52,10 +56,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
     const themeToggle = document.getElementById('themeToggle');
     
-    if (savedTheme === 'dark') {
+    if (themeToggle && savedTheme === 'dark') {
         document.body.setAttribute('data-theme', 'dark');
         themeToggle.innerHTML = '☀️';
     }
+});
+
+// Statistics Counter Animation (NEW)
+document.addEventListener('DOMContentLoaded', function() {
+    const statsSection = document.querySelector('.stats-counter-section');
+    if (!statsSection) return;
+    
+    const statNumbers = statsSection.querySelectorAll('.stat-number');
+    let animated = false;
+
+    // Function to animate counter
+    function animateCounter(element) {
+        const target = parseInt(element.getAttribute('data-target'));
+        const duration = 2000; // 2 seconds
+        const increment = target / (duration / 16); // 60 FPS
+        let current = 0;
+
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                element.textContent = Math.floor(current) + '+';
+                requestAnimationFrame(updateCounter);
+            } else {
+                element.textContent = target + '+';
+            }
+        };
+
+        updateCounter();
+    }
+
+    // Intersection Observer for scroll detection
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !animated) {
+                animated = true;
+                statNumbers.forEach(stat => {
+                    animateCounter(stat);
+                });
+            }
+        });
+    }, {
+        threshold: 0.5 // Trigger when 50% of section is visible
+    });
+
+    // Observe the stats section
+    observer.observe(statsSection);
 });
 
 // AI Chatbot functionality
@@ -75,7 +125,9 @@ const pakistanKnowledge = {
 
 function toggleChatbot() {
     const modal = document.getElementById('chatbotModal');
-    modal.style.display = modal.style.display === 'none' ? 'block' : 'none';
+    if (modal) {
+        modal.style.display = modal.style.display === 'none' ? 'block' : 'none';
+    }
 }
 
 function handleKeyPress(event) {
@@ -138,39 +190,19 @@ function generateResponse(message) {
     return "I can help you learn about Pakistan's cities (Lahore, Karachi, Islamabad, Peshawar, Multan, Quetta), food, culture, and travel tips. What would you like to know?";
 }
 
-// Existing code
-const themeToggle = document.getElementById('themeToggle');
-const body = document.body;
-
-// Load saved theme
-const savedTheme = localStorage.getItem('theme') || 'light';
-body.setAttribute('data-theme', savedTheme);
-updateThemeIcon(savedTheme);
-
-themeToggle.addEventListener('click', () => {
-    const currentTheme = body.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    body.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-});
-
-function updateThemeIcon(theme) {
-    themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
-}
-
 // Card Animation
 const animateBtn = document.getElementById('animateCards');
 const cityCards = document.querySelectorAll('.city-card');
 
 // Initial animation on page load
 window.addEventListener('load', () => {
-    cityCards.forEach((card, index) => {
-        setTimeout(() => {
-            card.classList.add('animate');
-        }, index * 100);
-    });
+    if (cityCards.length > 0) {
+        cityCards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('animate');
+            }, index * 100);
+        });
+    }
 });
 
 // Manual animation trigger

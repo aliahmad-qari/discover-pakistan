@@ -1,0 +1,206 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    CITY TEMPLATE QUICK REFERENCE CARD                        ║
+║                         Discover Pakistan Project                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📋 PLACEHOLDERS TO REPLACE (Search & Replace in your editor)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[CITY NAME]              → Your city name (e.g., "Rawalpindi")
+[CITY TAGLINE]           → Short tagline (e.g., "Twin City of Islamabad")
+[CITY-IMAGE]             → Hero background image filename
+[PROVINCE]               → Province name (Punjab/Sindh/KP/Balochistan)
+[HERITAGE TYPE]          → Heritage type (e.g., "Mughal Heritage")
+[SPECIAL FEATURE]        → Special feature (e.g., "Cultural Hub")
+[PROVINCE NAME]          → Full province name
+[POPULATION]             → Population (e.g., "2.5 Million")
+[LANGUAGE]               → Languages spoken (e.g., "Punjabi, Urdu")
+[FOUNDED YEAR]           → Founding year (e.g., "1493 AD")
+[PLACE1-IMAGE]           → Famous place image 1
+[PLACE NAME 1]           → Famous place name 1
+[ERA/PERIOD]             → Historical period (e.g., "Mughal Era")
+[LOCATION]               → Location within city
+[CULTURE-IMAGE]          → Culture section image
+[FOOD-IMAGE]             → Food section image
+[DISH NAME 1-4]          → Local dish names
+[BEST MONTHS]            → Best time to visit
+[Airport Name]           → Local airport name
+[Railway Station]        → Railway station name
+[Bus Terminal]           → Bus terminal name
+[AREA 1-3]               → Accommodation areas
+[TRANSPORT OPTION 1-3]   → Local transport options
+[TIP 1-6]                → Travel tips
+[GALLERY1-6]             → Gallery image filenames
+[Image Caption 1-6]      → Gallery image captions
+[CITY1-4 URL]            → Nearby city page URLs
+[CITY1-4 NAME]           → Nearby city names
+[DISTANCE]               → Distance in km
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 SECTIONS INCLUDED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ✅ Navigation Bar (Professional, sticky)
+2. ✅ Hero Section (Full-width with breadcrumb)
+3. ✅ Quick Facts (4-column grid with icons)
+4. ✅ History Section (2-3 paragraphs)
+5. ✅ Famous Places (Card grid, expandable)
+6. ✅ Culture & Food (Two-column layout)
+7. ✅ Travel Tips (4 cards + additional tips)
+8. ✅ Photo Gallery (6 images with hover effects)
+9. ✅ Google Map (Embedded iframe)
+10. ✅ Nearby Cities (4 city cards with links)
+11. ✅ Footer (Social links, copyright)
+12. ✅ Floating Buttons (Scroll to top, WhatsApp, Chatbot)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📐 IMAGE DIMENSIONS (Recommended)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hero Background:     1920 x 1080 px (landscape)
+Place Cards:         800 x 600 px
+Gallery Images:      800 x 600 px
+Nearby City Cards:   600 x 400 px
+Culture/Food:        800 x 600 px
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 COLOR CODES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Success Green:   #28a745  (bg-success)
+Primary Blue:    #007bff  (bg-primary)
+Warning Yellow:  #ffc107  (bg-warning)
+Danger Red:      #dc3545  (bg-danger)
+Dark Green:      #006400  (Pakistan green)
+Light Gray:      #f8f9fa  (bg-light)
+Dark Gray:       #343a40  (bg-dark)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ QUICK START (3 Steps)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Copy template:
+   cp city-template.html your-city-name.html
+
+2. Find & Replace all [PLACEHOLDERS]
+   Use your editor's search function (Ctrl+H or Cmd+H)
+
+3. Upload images to /images/ folder
+   Name them clearly (e.g., rawalpindi-hero.jpg)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔗 GOOGLE MAPS EMBED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Go to: https://www.google.com/maps
+2. Search for your city
+3. Click "Share" button
+4. Select "Embed a map" tab
+5. Copy the <iframe> code
+6. Replace the entire iframe section in template
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ PRE-PUBLISH CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ All [PLACEHOLDERS] replaced
+□ Images uploaded to /images/ folder
+□ Image paths correct (images/filename.jpg)
+□ History content written (2-3 paragraphs)
+□ At least 3 famous places added
+□ Culture & food sections filled
+□ Travel tips completed
+□ 6 gallery images added
+□ Google Map embedded
+□ 4 nearby cities linked
+□ Tested on mobile device
+□ Tested in Chrome, Firefox, Safari
+□ All links working
+□ No console errors
+□ Footer displays correctly
+□ Chatbot working
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚫 DO NOT CHANGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✗ Navigation bar structure
+✗ Footer content
+✗ Bootstrap classes
+✗ styles.css file
+✗ script.js file
+✗ Floating button positions
+✗ Responsive breakpoints
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 RESPONSIVE DESIGN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Desktop (1200px+):    4 columns for cards
+Tablet (768-1199px):  2 columns for cards
+Mobile (<768px):      1 column for cards
+
+All sections automatically adjust - no extra code needed!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 PRO TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Use high-quality images (compress before upload)
+• Write authentic, researched content
+• Keep paragraphs short and readable
+• Add 3-6 famous places (not too many)
+• Include practical travel information
+• Link to relevant nearby cities
+• Test on actual mobile devices
+• Use consistent naming for images
+• Optimize images for web (use TinyPNG)
+• Proofread all content before publishing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📂 FILE NAMING CONVENTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HTML Files:    lowercase-with-hyphens.html
+               Example: rawalpindi.html, dera-ghazi-khan.html
+
+Images:        cityname-description.jpg
+               Example: rawalpindi-hero.jpg
+                       rawalpindi-fort.jpg
+                       rawalpindi-food.jpg
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎓 EXAMPLE: Creating Rawalpindi Page
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. cp city-template.html rawalpindi.html
+2. Replace [CITY NAME] → Rawalpindi
+3. Replace [CITY TAGLINE] → Twin City of Islamabad
+4. Replace [PROVINCE] → Punjab
+5. Replace [POPULATION] → 2.5 Million
+6. Replace [LANGUAGE] → Punjabi, Urdu
+7. Replace [FOUNDED YEAR] → 1493 AD
+8. Add 3 places: Rawalpindi Fort, Raja Bazaar, Ayub Park
+9. Write history (British cantonment, military significance)
+10. Add local food: Chapli Kebab, Dahi Bhalla, Samosas
+11. Upload 6 images
+12. Embed Google Map for Rawalpindi
+13. Link nearby: Islamabad, Taxila, Murree, Jhelum
+14. Test and publish!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Need help? Check CITY-TEMPLATE-GUIDE.md for detailed instructions!
+
+╚══════════════════════════════════════════════════════════════════════════════╝
